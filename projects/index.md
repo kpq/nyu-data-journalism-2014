@@ -30,8 +30,6 @@ dd.example a {
 
 In general, we are flexible about the format of your projects, so we don't want to have too many official requirements. Our only real goal is that you make something publishable. Below, some loose characteristics of a successful project.
 
-[Here’s the schedule](schedule.html)
-
 - **The project is a work of original journalism.**
 This is a requirement. It can be on a topic you're written about in the past, but it must contain original work and original findings. The purpose of your project should be journalistic, not technical.
 
@@ -41,6 +39,46 @@ This is a requirement. It can be on a topic you're written about in the past, bu
 - **The project should involve learning new skills that might not be covered in class.** This class is about learning a little bit about being fluent with data, structured information and the internet, but your projects will all take you down new paths. As such, you're bound to run into some technical obstacles that class might not prepare you for. Maybe you found a structured data source but need to scrape the data to do it. Or maybe you want to make a more complicated map than we've made in class, or work with a data file with 1 million records, or make a project that's optimized for a mobile phone or tablet. A good project will demonstrate to us that you know how to learn new skills as you face new problems
 
 - **The project must be published to the internet. (Duh.)** Whether it's on your github page or a different site, your project must be publicly accessible. It should be a web page you coded and styled yourself (though you're encouraged to be inspired by other news pages you've seen before). You will write all the code yourself
+
+###Kinds of projects you could do
+Blog style:
+[1](http://fivethirtyeight.blogs.nytimes.com/2013/07/09/rubio-is-losing-support-among-republican-voters/)
+[2](http://www.washingtonpost.com/blogs/wonkblog/wp/2013/09/26/the-falling-deficit-has-been-a-disaster-for-the-gop/)
+[3](http://blog.okcupid.com/index.php/the-biggest-lies-in-online-dating/)
+
+News Article:
+[1](http://www.nytimes.com/2013/07/22/business/in-climbing-income-ladder-location-matters.html)
+
+T-shape:
+[1](http://flowingdata.com/2013/08/27/in-search-of-food-deserts/)
+
+Big Interactive:
+[Fixed-width](http://www.nytimes.com/interactive/2009/11/06/business/economy/unemployment-lines.html)
+[Liquid](http://www.nytimes.com/newsgraphics/2013/09/28/eli-manning-milestone/)
+
+Big Viz:
+[1](http://news.nationalpost.com/2011/11/19/graphic-the-republican-nomination-race-so-far/)
+[2](http://www.nytimes.com/interactive/2012/07/20/us/drought-footprint.html)
+[3](http://www.nytimes.com/interactive/2012/10/15/us/politics/swing-history.html)
+[4](http://www.radicalcartography.net/index.html?chicagodots)
+[5](http://xkcd.com/657/large/)
+[6](http://www.nytimes.com/imagepages/2011/04/24/business/20110425_SIZE_graphic.html)
+[7](http://www.flickr.com/photos/walkingsf/sets/72157627140310742/)
+[8](http://www.flickr.com/photos/walkingsf/sets/72157624209158632/)
+
+Reactive Documents:
+[1](http://worrydream.com/LadderOfAbstraction/)
+[2](http://worrydream.com/Tangle/)
+[3](http://worrydream.com/ExplorableExplanations/)
+
+Goofy in kind of a bad way:
+[1](http://thewhyaxis.info/rasmussen/)
+
+Slideshow:
+[1](http://www.nytimes.com/interactive/2009/07/02/business/economy/20090705-cycles-graphic.html)
+[2](http://www.nytimes.com/interactive/2013/04/16/science/disease-overlap-in-elderly.html)
+[3](http://www.businessinsider.com/most-important-charts-in-the-world-q4-2013-10)
+
 
 ###Examples of published NYT projects that could be (supercharged) class projects:
 
@@ -109,14 +147,13 @@ I would probably need to learn how to scrape the data from baseball-reference, s
 There are a number of stat-based sports sites that I could pitch this to, including the [Baseball Prospectus blog](http://www.baseballprospectus.com/blog/), [FanGraphs](http://www.fangraphs.com/blogs/) or more local sites, like the sports desks of the San Francisco Chronicle or the Oakland Tribune.
 
 
-Email shavin with any questions.
+Email kemanda with any questions.
 
-<a href="#update-oct-15" id="update-oct-15">
-###Update###
-</a>
 
-We've started a small timeline for project deadlnes and progress.
+##Timeline for project success
+We'll be making sure your projects get done with this general outline.
 
+##Date 0
 By **Tuesday, Oct. 22**, you should update your pitch page (or make a new one) with your final pitch for your project. Most of you will just edit one of your original pitches and incoporate our feedback from last week, but some of you may need to re-pitch a new idea or two.
 
 Under your pitch, include the following:
@@ -133,5 +170,22 @@ Under your pitch, include the following:
 
 
 
+##Date 1
+Your project should be approved, you should have your repo setup and your main dataset downloaded. You’ve started to examine your data in R or Excel or D3, and have a vague sense of what you want to make. You should be starting to contact your, er, contacts and setting up any interviews if needed. You should have identified any secondary datasets you'll need and should be collected them this week (like geo shapefiles, or census demographic info, etc...).
+
+##Date
+All your data should be collected and organized in your repo. You should have made first contact with any experts you'll need to help explain your findings. You should have several sketches in Excel or whatever technology you'll use.
+
+##Date
+You should have a starting of your final HTML document, even if it's just some text and Excel sketch screenshots. You should have a very good sense of what you're building and what technologies you will need.
+
+##Date
+Your HTML document should be taking shape. If your project is mostly text, you should have a strong outline ready with your main findings. If you're making something more visual or technical, you should have made substantial coding progress -- datasets are loaded and in the correct format, topojson files are generated if needed. If you're trying to do more than one chart on a page, now is a good time to refactor so things work well together.
+
+##Date
+This will be a last minute sanity check. Everything should be mostly in place, any interactivity should be mostly working. This last week should be reserved for design tweaks, text rewrites and polishing.
+
+##Date
+Your project must be published with a final URL by the beginning of class. You will give a brief overview of your project and are required to be gracious during your classmates thunderous applause.
 
 

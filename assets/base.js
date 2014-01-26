@@ -12,7 +12,7 @@ var rainbowLetters = headline.selectAll("span")
 
 // d3.timer(function(t) {
 
-  t = 1000;
+  t = 1000*Math.random();
   rainbowLetters
       .style("color", function(d, i) { return colors(Math.floor(t / 50 + i)); })
       .style("top", function(d, i) { return Math.sin(i / 2 + t / 50) * 8 + "px"; })
