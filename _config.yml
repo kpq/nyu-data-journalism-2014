@@ -1,0 +1,6 @@
+name: NYU — Data Visualization — Spring 2014
+markdown: redcarpet
+redcarpet:
+  extensions: [smart]
+pygments: true
+baseurl: /nyu-data-journalism-2014
