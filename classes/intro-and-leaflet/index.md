@@ -11,8 +11,8 @@ Finally, we'll get inspired by some code we see online and use it for a quick de
 
 ##Housekeeping
 
--   Make sure your info is right on the wiki
--   Are you sure you've signed up for the google group?
+-   Make sure your info is right on the [wiki](https://github.com/kpq/nyu-data-journalism-2014/wiki/Class-wiki)
+-   Are you sure you've signed up for the [Google group](https://groups.google.com/forum/#!forum/nyu-data-journalism-2014)?
 
 ##Introduction
 
@@ -24,7 +24,13 @@ How Kevin Got Started [Great link #1](http://www.google.com) [Great link #1](htt
 
 [Process walkthrough TBD – could be China art, 4thbot, whatever](http://www.google.com)
 
-Discussion: what do you all want to get out of the class? What kinds of jobs are you going to be looking for?
+Discussion: 
+
+- What do you all want to get out of the class?
+
+- What kinds of jobs are you going to be looking for?
+
+- What has been missing so far in your journalism education?
 
 ##Getting your machines set up
 
@@ -46,20 +52,34 @@ If you’ve never used <a href="http://git-scm.com/">Git</a> or <a href="https:/
 
 2. Once you are logged in, click on “Create a repository.” You should see this screen:
   <img src="create-repo.png">
-  Name your repo “dataviz-home”.
+  Name your repo ```data-journalism-home```.
   Make sure you check “Initialize this repository with a README”.
-  Finally, click the button that says “Create repository.”
+  Finally, click the button that says ```Create repository.```
   
-3. You’ve just intialized a Git repository! Nice. Now we need to copy it to our computers.
+3. Switch the branch from ```master``` to ```gh-pages```. (It has to be called gh-pages to take advantage of some built-in magic with Github Pages.)
+   <img src="gh-pages.png"> 
 
-###Creating a Home For Our Repositories
-Some of this might seem kind of fussy, but since we’ll be doing a lot of debugging on everyone’s machines, we want to make sure we’re all working the same way. So, first let’s create a home folder for all our class repositories.
+4. Copy the clone url on the bottom-right.
+  <img src="clone.png">
+
+###Installing git
+1. [This maybe](http://git-scm.com/book/en/Getting-Started-Installing-Git)
+
+3. You’ve just intialized a Git repository! Nice. Now we need to copy it to our computers.
 
 1. Go to your home directory, it’s the one in your sidebar with a house icon. Kevin's is called “kevin” and the keyboard shortcut to go there is: ⌘⇧H
   
-2. Inside this folder, create a new folder called “dataviz-fall-2013”. This is where we’re going to store all of our repositories.
+2. Inside this folder, create a new folder called ```data-journalism-spring-2014```. This is where we’re going to store our repository (and, later on, where we'll put other ones).
     <img src="starting-folder.png">
+
+3. Open up the Terminal application on your Mac and navigate to the folder you just created. (We'll do some practice, too.) For later, here are some decent resources, from [Codeacademy](http://www.codecademy.com/blog/72-getting-comfortable-in-the-terminal-linux) and [Stanford](http://mally.stanford.edu/~sr/computing/basic-unix.html).
+
+4. Once you're "inside" your folder on the Terminal, type ```git clone``` and then the URL you pasted from earlier. (For Kevin, it's ```git clone https://github.com/kpq/data-journalism-home.git```), but yours will be slightly different.
+  <img src="terminal-1.png">
+
   
+<!-- 
+
 
 ###Installing Github on Your Computer
 Now you’ll need the Github application on your computer so you can edit and sync your projects.
@@ -82,3 +102,4 @@ Now you’ll need the Github application on your computer so you can edit and sy
   
 1. Now, go back to the Finder and find your home directory. There should be a folder within “dataviz-fall-2013” called “dataviz-home”, with one file inside of it.
   <img src="dataviz-home.png">
+ -->

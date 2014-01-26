@@ -34,8 +34,8 @@
 <h2>Housekeeping</h2>
 
 <ul>
-<li>  Make sure your info is right on the wiki</li>
-<li>  Are you sure you&rsquo;ve signed up for the google group?</li>
+<li>  Make sure your info is right on the <a href="https://github.com/kpq/nyu-data-journalism-2014/wiki/Class-wiki">wiki</a></li>
+<li>  Are you sure you&rsquo;ve signed up for the <a href="https://groups.google.com/forum/#!forum/nyu-data-journalism-2014">Google group</a>?</li>
 </ul>
 
 <h2>Introduction</h2>
@@ -48,7 +48,13 @@
 
 <p><a href="http://www.google.com">Process walkthrough TBD – could be China art, 4thbot, whatever</a></p>
 
-<p>Discussion: what do you all want to get out of the class? What kinds of jobs are you going to be looking for?</p>
+<p>Discussion: </p>
+
+<ul>
+<li><p>What do you all want to get out of the class?</p></li>
+<li><p>What kinds of jobs are you going to be looking for?</p></li>
+<li><p>What has been missing so far in your journalism education?</p></li>
+</ul>
 
 <h2>Getting your machines set up</h2>
 
@@ -70,41 +76,53 @@
 <img src="github-welcome.png">.</p></li>
 <li><p>Once you are logged in, click on “Create a repository.” You should see this screen:
 <img src="create-repo.png">
-Name your repo “dataviz-home”.
+Name your repo <code>data-journalism-home</code>.
 Make sure you check “Initialize this repository with a README”.
-Finally, click the button that says “Create repository.”</p></li>
-<li><p>You’ve just intialized a Git repository! Nice. Now we need to copy it to our computers.</p></li>
+Finally, click the button that says <code>Create repository.</code></p></li>
+<li><p>Switch the branch from <code>master</code> to <code>gh-pages</code>. (It has to be called gh-pages to take advantage of some built-in magic with Github Pages.)
+<img src="gh-pages.png"> </p></li>
+<li><p>Copy the clone url on the bottom-right.
+<img src="clone.png"></p></li>
 </ol>
 
-<h3>Creating a Home For Our Repositories</h3>
-
-<p>Some of this might seem kind of fussy, but since we’ll be doing a lot of debugging on everyone’s machines, we want to make sure we’re all working the same way. So, first let’s create a home folder for all our class repositories.</p>
+<h3>Installing git</h3>
 
 <ol>
+<li><p><a href="http://git-scm.com/book/en/Getting-Started-Installing-Git">This maybe</a></p></li>
+<li><p>You’ve just intialized a Git repository! Nice. Now we need to copy it to our computers.</p></li>
 <li><p>Go to your home directory, it’s the one in your sidebar with a house icon. Kevin&rsquo;s is called “kevin” and the keyboard shortcut to go there is: ⌘⇧H</p></li>
-<li><p>Inside this folder, create a new folder called “dataviz-fall-2013”. This is where we’re going to store all of our repositories.
+<li><p>Inside this folder, create a new folder called <code>data-journalism-spring-2014</code>. This is where we’re going to store our repository (and, later on, where we&rsquo;ll put other ones).
 <img src="starting-folder.png"></p></li>
+<li><p>Open up the Terminal application on your Mac and navigate to the folder you just created. (We&rsquo;ll do some practice, too.) For later, here are some decent resources, from <a href="http://www.codecademy.com/blog/72-getting-comfortable-in-the-terminal-linux">Codeacademy</a> and <a href="http://mally.stanford.edu/%7Esr/computing/basic-unix.html">Stanford</a>.</p></li>
+<li><p>Once you&rsquo;re &ldquo;inside&rdquo; your folder on the Terminal, type <code>git clone</code> and then the URL you pasted from earlier. (For Kevin, it&rsquo;s <code>git clone https://github.com/kpq/data-journalism-home.git</code>), but yours will be slightly different.
+<img src="terminal-1.png"></p></li>
 </ol>
 
-<h3>Installing Github on Your Computer</h3>
+<!-- 
 
-<p>Now you’ll need the Github application on your computer so you can edit and sync your projects.
+
+###Installing Github on Your Computer
+Now you’ll need the Github application on your computer so you can edit and sync your projects.
 1. Download and install the Github application. <a href="http://mac.github.com/">Mac</a> or <a href="http://windows.github.com/">Windows</a>.
   <a href="http:mac.github.com"><img src="github-download.png"></a>
-  (If you get stuck in the future, there are good help pages for <a href="http://mac.github.com/help.html">Mac</a> and <a href="http://windows.github.com/help.html">Windows</a>.)</p>
-
-<ol>
-<li><p>After installing, when you first launch the application it will ask you to move it to the Applications folder. Say “yes”.</p></li>
-<li><p>When it re-launches, it’ll step you through a setup process. You’ll need to enter your shiny new Github credentials, you’ll want the command-line tools, but you don’t need to “add local repositories”.</p></li>
-<li><p>You should now see a window that lists one repository: “dataviz-home”. Click the button next to it that says “Clone to Computer”.
-<img src="list-of-repos.png"></p></li>
-<li><p>A dialog window will popup. Navigate to your “dataviz-fall-2013” folder in your home directory. Click “Clone”.
-<img src="save-to-home.png"></p></li>
-<li><p>Click on the little arrow next to your repo name and you now can see the whole edit history for that repo. You should only have one entry, and it’ll be called “Initial Commit”.
-<img src="first-commit.png"></p></li>
-<li><p>Now, go back to the Finder and find your home directory. There should be a folder within “dataviz-fall-2013” called “dataviz-home”, with one file inside of it.
-<img src="dataviz-home.png"></p></li>
-</ol>
+  (If you get stuck in the future, there are good help pages for <a href="http://mac.github.com/help.html">Mac</a> and <a href="http://windows.github.com/help.html">Windows</a>.)
+  
+1. After installing, when you first launch the application it will ask you to move it to the Applications folder. Say “yes”.
+  
+1. When it re-launches, it’ll step you through a setup process. You’ll need to enter your shiny new Github credentials, you’ll want the command-line tools, but you don’t need to “add local repositories”.
+  
+1. You should now see a window that lists one repository: “dataviz-home”. Click the button next to it that says “Clone to Computer”.
+    <img src="list-of-repos.png">
+  
+1. A dialog window will popup. Navigate to your “dataviz-fall-2013” folder in your home directory. Click “Clone”.
+  <img src="save-to-home.png">
+  
+1. Click on the little arrow next to your repo name and you now can see the whole edit history for that repo. You should only have one entry, and it’ll be called “Initial Commit”.
+  <img src="first-commit.png">
+  
+1. Now, go back to the Finder and find your home directory. There should be a folder within “dataviz-fall-2013” called “dataviz-home”, with one file inside of it.
+  <img src="dataviz-home.png">
+ &ndash;>
 
 </div>
 
