@@ -16,13 +16,13 @@ Finally, we'll get inspired by some code we see online and use it for a quick de
 
 ##Introduction
 
-How Amanda Got Started [Great link #1](http://d.pr/i/XrmI) [Great link #1](http://www.nytimes.com/packages/html/newsgraphics/pages/hp/2008/2008-06-03-1800.html) [Great link #1](http://www.google.com)
+How Amanda Got Started [Intern](http://d.pr/i/XrmI) [Delightful boxes](http://www.nytimes.com/packages/html/newsgraphics/pages/hp/2008/2008-06-03-1800.html) [The dots are real](http://www.nytimes.com/interactive/2013/06/12/arts/design/Damien-Hirsts-Spot-Prices.html?_r=3&)
 
-How Kevin Got Started [Great link #1](http://www.google.com) [Great link #1](http://www.google.com) [Great link #1](http://www.google.com)
+How Kevin Got Started [Grad school](http://www.columbiamissourian.com/m/1497/weve-got-to-have-more-corn-expert-says/) [Intern](http://www.nytimes.com/interactive/2008/05/26/sports/playmagazine/200805227_IVANOVIC_GRAPHIC.html) [Peaked](http://www.nytimes.com/interactive/2012/08/05/sports/olympics/the-100-meter-dash-one-race-every-medalist-ever.html)
 
 [2013: The Year in Interactive Storytelling](http://www.nytimes.com/newsgraphics/2013/12/30/year-in-interactive-storytelling/)
 
-[Process walkthrough TBD – could be China art, 4thbot, whatever](http://www.google.com)
+[Learn to think like Amanda](http://chartsnthings.tumblr.com/post/23348191031/amanda-cox-and-countrymen-chart-the-facebook-i-p-o)
 
 Discussion: 
 
@@ -40,8 +40,7 @@ Discussion:
 
   PC Users might consider [Notepad++](http://notepad-plus-plus.org/).
 
-2. Next, we need to make sure Git is installed on all our computers. Here's [a helper](https://help.github.com/articles/user-organization-and-project-pages), but we'll do this together, too.
-
+2. Next, we need to make sure Git is installed on all our computers. Here's [a helper](http://git-scm.com/book/en/Getting-Started-Installing-Git). If you have a Mac, you probably have it installed already. We'll do this together.
 
 ###Signing up for Github
 If you’ve never used <a href="http://git-scm.com/">Git</a> or <a href="https://github.com">Github</a> before, don’t worry, it’s not as scary as it may seem at first. It’s basically like <a href="https://www.dropbox.com/">Dropbox</a> for programmers, with enough goofy names and concepts to make it all feel a little more complicated than it really is.
@@ -62,10 +61,7 @@ If you’ve never used <a href="http://git-scm.com/">Git</a> or <a href="https:/
 4. Copy the clone url on the bottom-right.
   <img src="clone.png">
 
-###Installing git
-1. [This maybe](http://git-scm.com/book/en/Getting-Started-Installing-Git)
-
-3. You’ve just intialized a Git repository! Nice. Now we need to copy it to our computers.
+4. We've made a siccessful Git repository (called a repo). Nice! Now all we need to do is copy it to our computers. 
 
 1. Go to your home directory, it’s the one in your sidebar with a house icon. Kevin's is called “kevin” and the keyboard shortcut to go there is: ⌘⇧H
   
@@ -77,29 +73,46 @@ If you’ve never used <a href="http://git-scm.com/">Git</a> or <a href="https:/
 4. Once you're "inside" your folder on the Terminal, type ```git clone``` and then the URL you pasted from earlier. (For Kevin, it's ```git clone https://github.com/kpq/data-journalism-home.git```), but yours will be slightly different.
   <img src="terminal-1.png">
 
-  
-<!-- 
+5. Open up the folder in a text editor (like Sublime or whatever you prefer). Create a new file called ```index.html``` and write 
+
+  ```html
+  <h1>Hello, world!</h1>
+  ```  
+
+6. Save the file and view it in a web browser. How does it look?
+
+7. Let's use git and the Terminal to push it back to Github. Type this in the Terminal. (Hit enter after each line.)
+
+  ```html
+
+  git add .
+  git commit -m "added index page, this is a commit message"
+  git push origin master
+
+  ```
+
+8. If it worked, you should be able to go to your web page (github.com/yourUserName) and see the result. And, after a while, if you're on the gh-pages branch, you shoudl have a public-facing web site on yourUserName.gitub.io/. Sweet!
+
+##If there's time: using an online example.
+Say you want to make an interactive map of the United States and you don't know where to start, but you DO know what you want your map to look and behave pretty much like [this one](http://bl.ocks.org/ansis/9368682874d9e8adda21) you've already seen. 
+
+<img src="leaflet-map.png">
 
 
-###Installing Github on Your Computer
-Now you’ll need the Github application on your computer so you can edit and sync your projects.
-1. Download and install the Github application. <a href="http://mac.github.com/">Mac</a> or <a href="http://windows.github.com/">Windows</a>.
-  <a href="http:mac.github.com"><img src="github-download.png"></a>
-  (If you get stuck in the future, there are good help pages for <a href="http://mac.github.com/help.html">Mac</a> and <a href="http://windows.github.com/help.html">Windows</a>.)
-  
-1. After installing, when you first launch the application it will ask you to move it to the Applications folder. Say “yes”.
-  
-1. When it re-launches, it’ll step you through a setup process. You’ll need to enter your shiny new Github credentials, you’ll want the command-line tools, but you don’t need to “add local repositories”.
-  
-1. You should now see a window that lists one repository: “dataviz-home”. Click the button next to it that says “Clone to Computer”.
-    <img src="list-of-repos.png">
-  
-1. A dialog window will popup. Navigate to your “dataviz-fall-2013” folder in your home directory. Click “Clone”.
-  <img src="save-to-home.png">
-  
-1. Click on the little arrow next to your repo name and you now can see the whole edit history for that repo. You should only have one entry, and it’ll be called “Initial Commit”.
-  <img src="first-commit.png">
-  
-1. Now, go back to the Finder and find your home directory. There should be a folder within “dataviz-fall-2013” called “dataviz-home”, with one file inside of it.
-  <img src="dataviz-home.png">
- -->
+What's next?
+
+1. Open the page in a separate window and view the page source.
+2. Copy all the code and paste it into a new file in your text editor. Call it ```week-1-map.html``` and save it into your class folder.
+3. Open the file in a browser.
+4. Say your data is not people per square mile but something else per state – say, dollars raised for a political campaign. Where does this map get that data from?
+
+5. If you can, find the data and save a local copy. Then edit the data for New York and see what happens.
+
+6. Broadly speaking, how can you use this example going forward?
+
+
+##Homework
+
+Your only real assignment is to have your github page publishing correctly before the next class. For now, that means yourusername.github.io should be rendering your `index.html` page with your name and the phrase "Useful links for Kevin and Amanda." (We'll be adding more links later.)
+
+

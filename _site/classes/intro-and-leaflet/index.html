@@ -40,13 +40,13 @@
 
 <h2>Introduction</h2>
 
-<p>How Amanda Got Started <a href="http://d.pr/i/XrmI">Great link #1</a> <a href="http://www.nytimes.com/packages/html/newsgraphics/pages/hp/2008/2008-06-03-1800.html">Great link #1</a> <a href="http://www.google.com">Great link #1</a></p>
+<p>How Amanda Got Started <a href="http://d.pr/i/XrmI">Intern</a> <a href="http://www.nytimes.com/packages/html/newsgraphics/pages/hp/2008/2008-06-03-1800.html">Delightful boxes</a> <a href="http://www.nytimes.com/interactive/2013/06/12/arts/design/Damien-Hirsts-Spot-Prices.html?_r=3&amp;">The dots are real</a></p>
 
-<p>How Kevin Got Started <a href="http://www.google.com">Great link #1</a> <a href="http://www.google.com">Great link #1</a> <a href="http://www.google.com">Great link #1</a></p>
+<p>How Kevin Got Started <a href="http://www.columbiamissourian.com/m/1497/weve-got-to-have-more-corn-expert-says/">Grad school</a> <a href="http://www.nytimes.com/interactive/2008/05/26/sports/playmagazine/200805227_IVANOVIC_GRAPHIC.html">Intern</a> <a href="http://www.nytimes.com/interactive/2012/08/05/sports/olympics/the-100-meter-dash-one-race-every-medalist-ever.html">Peaked</a></p>
 
 <p><a href="http://www.nytimes.com/newsgraphics/2013/12/30/year-in-interactive-storytelling/">2013: The Year in Interactive Storytelling</a></p>
 
-<p><a href="http://www.google.com">Process walkthrough TBD – could be China art, 4thbot, whatever</a></p>
+<p><a href="http://chartsnthings.tumblr.com/post/23348191031/amanda-cox-and-countrymen-chart-the-facebook-i-p-o">Learn to think like Amanda</a></p>
 
 <p>Discussion: </p>
 
@@ -64,7 +64,7 @@
 <p>For Mac users, we strongly recommend <a href="http://www.sublimetext.com/2">Sublime Text 2</a>. It eventually costs $70, but you can use it for free for a while. (Kevin still uses the free version and he uses it every day.) Other alternatives include <a href="http://www.barebones.com/products/textwrangler/">TextWrangler</a> (free) or <a href="http://www.barebones.com/products/bbedit/">BBEdit</a> (not free).</p>
 
 <p>PC Users might consider <a href="http://notepad-plus-plus.org/">Notepad++</a>.</p></li>
-<li><p>Next, we need to make sure Git is installed on all our computers. Here&rsquo;s <a href="https://help.github.com/articles/user-organization-and-project-pages">a helper</a>, but we&rsquo;ll do this together, too.</p></li>
+<li><p>Next, we need to make sure Git is installed on all our computers. Here&rsquo;s <a href="http://git-scm.com/book/en/Getting-Started-Installing-Git">a helper</a>. If you have a Mac, you probably have it installed already. We&rsquo;ll do this together.</p></li>
 </ol>
 
 <h3>Signing up for Github</h3>
@@ -83,46 +83,45 @@ Finally, click the button that says <code>Create repository.</code></p></li>
 <img src="gh-pages.png"> </p></li>
 <li><p>Copy the clone url on the bottom-right.
 <img src="clone.png"></p></li>
-</ol>
-
-<h3>Installing git</h3>
-
-<ol>
-<li><p><a href="http://git-scm.com/book/en/Getting-Started-Installing-Git">This maybe</a></p></li>
-<li><p>You’ve just intialized a Git repository! Nice. Now we need to copy it to our computers.</p></li>
+<li><p>We&rsquo;ve made a siccessful Git repository (called a repo). Nice! Now all we need to do is copy it to our computers. </p></li>
 <li><p>Go to your home directory, it’s the one in your sidebar with a house icon. Kevin&rsquo;s is called “kevin” and the keyboard shortcut to go there is: ⌘⇧H</p></li>
 <li><p>Inside this folder, create a new folder called <code>data-journalism-spring-2014</code>. This is where we’re going to store our repository (and, later on, where we&rsquo;ll put other ones).
 <img src="starting-folder.png"></p></li>
 <li><p>Open up the Terminal application on your Mac and navigate to the folder you just created. (We&rsquo;ll do some practice, too.) For later, here are some decent resources, from <a href="http://www.codecademy.com/blog/72-getting-comfortable-in-the-terminal-linux">Codeacademy</a> and <a href="http://mally.stanford.edu/%7Esr/computing/basic-unix.html">Stanford</a>.</p></li>
 <li><p>Once you&rsquo;re &ldquo;inside&rdquo; your folder on the Terminal, type <code>git clone</code> and then the URL you pasted from earlier. (For Kevin, it&rsquo;s <code>git clone https://github.com/kpq/data-journalism-home.git</code>), but yours will be slightly different.
 <img src="terminal-1.png"></p></li>
+<li><p>Open up the folder in a text editor (like Sublime or whatever you prefer). Create a new file called <code>index.html</code> and write </p>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;h1&gt;</span>Hello, world!<span class="nt">&lt;/h1&gt;</span>
+</code></pre></div></li>
+<li><p>Save the file and view it in a web browser. How does it look?</p></li>
+<li><p>Let&rsquo;s use git and the Terminal to push it back to Github. Type this in the Terminal. (Hit enter after each line.)</p>
+<div class="highlight"><pre><code class="html language-html" data-lang="html">git add .
+git commit -m &quot;added index page, this is a commit message&quot;
+git push origin master
+</code></pre></div></li>
+<li><p>If it worked, you should be able to go to your web page (github.com/yourUserName) and see the result. And, after a while, if you&rsquo;re on the gh-pages branch, you shoudl have a public-facing web site on yourUserName.gitub.io/. Sweet!</p></li>
 </ol>
 
-<!-- 
+<h2>If there&rsquo;s time: using an online example.</h2>
 
+<p>Say you want to make an interactive map of the United States and you don&rsquo;t know where to start, but you DO know what you want your map to look and behave pretty much like <a href="http://bl.ocks.org/ansis/9368682874d9e8adda21">this one</a> you&rsquo;ve already seen. </p>
 
-###Installing Github on Your Computer
-Now you’ll need the Github application on your computer so you can edit and sync your projects.
-1. Download and install the Github application. <a href="http://mac.github.com/">Mac</a> or <a href="http://windows.github.com/">Windows</a>.
-  <a href="http:mac.github.com"><img src="github-download.png"></a>
-  (If you get stuck in the future, there are good help pages for <a href="http://mac.github.com/help.html">Mac</a> and <a href="http://windows.github.com/help.html">Windows</a>.)
-  
-1. After installing, when you first launch the application it will ask you to move it to the Applications folder. Say “yes”.
-  
-1. When it re-launches, it’ll step you through a setup process. You’ll need to enter your shiny new Github credentials, you’ll want the command-line tools, but you don’t need to “add local repositories”.
-  
-1. You should now see a window that lists one repository: “dataviz-home”. Click the button next to it that says “Clone to Computer”.
-    <img src="list-of-repos.png">
-  
-1. A dialog window will popup. Navigate to your “dataviz-fall-2013” folder in your home directory. Click “Clone”.
-  <img src="save-to-home.png">
-  
-1. Click on the little arrow next to your repo name and you now can see the whole edit history for that repo. You should only have one entry, and it’ll be called “Initial Commit”.
-  <img src="first-commit.png">
-  
-1. Now, go back to the Finder and find your home directory. There should be a folder within “dataviz-fall-2013” called “dataviz-home”, with one file inside of it.
-  <img src="dataviz-home.png">
- &ndash;>
+<p><img src="leaflet-map.png"></p>
+
+<p>What&rsquo;s next?</p>
+
+<ol>
+<li>Open the page in a separate window and view the page source.</li>
+<li>Copy all the code and paste it into a new file in your text editor. Call it <code>week-1-map.html</code> and save it into your class folder.</li>
+<li>Open the file in a browser.</li>
+<li><p>Say your data is not people per square mile but something else per state – say, dollars raised for a political campaign. Where does this map get that data from?</p></li>
+<li><p>If you can, find the data and save a local copy. Then edit the data for New York and see what happens.</p></li>
+<li><p>Broadly speaking, how can you use this example going forward?</p></li>
+</ol>
+
+<h2>Homework</h2>
+
+<p>Your only real assignment is to have your github page publishing correctly before the next class. For now, that means yourusername.github.io should be rendering your <code>index.html</code> page with your name and the phrase &ldquo;Useful links for Kevin and Amanda.&rdquo; (We&rsquo;ll be adding more links later.)</p>
 
 </div>
 
