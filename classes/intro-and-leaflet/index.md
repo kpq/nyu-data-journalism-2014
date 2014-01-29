@@ -4,6 +4,34 @@ week: 1
 title: Getting up to speed
 ---
 
+<head>
+    <script src='http://api.tiles.mapbox.com/mapbox.js/v1.0.0/mapbox.js'></script>
+    <link href='http://api.tiles.mapbox.com/mapbox.js/v1.0.0/mapbox.css' rel='stylesheet' />
+    <style>
+        #map { position:relative; top:0; bottom:0; width:100%; height: 400px; margin-bottom: 20px;}
+    </style>
+</head>
+<style>
+    .map-legend i {
+        width: 18px;
+        height: 18px;
+        float: left;
+        margin-right: 8px;
+        opacity: 0.7;
+    }
+    .leaflet-popup h2{
+      margin-top: 0px;
+      border: none;
+    }
+    .leaflet-popup-close-button {
+        display: none;
+    }
+    .leaflet-popup-content-wrapper {
+        pointer-events: none;
+    }
+</style>
+
+
 We'll do normal first-day things, like talk about why we‘re all here and what we want. Class goals and policies, introductions, office hours, grading policies, project overview, configuring our laptops, signing up for tutorial and presenation duty.
 
 Finally, we'll get inspired by some code we see online and use it for a quick demonstration.
@@ -22,7 +50,7 @@ How Kevin Got Started [Grad school](http://www.columbiamissourian.com/m/1497/wev
 
 [2013: The Year in Interactive Storytelling](http://www.nytimes.com/newsgraphics/2013/12/30/year-in-interactive-storytelling/)
 
-[Learn to think like Amanda](http://chartsnthings.tumblr.com/post/23348191031/amanda-cox-and-countrymen-chart-the-facebook-i-p-o)
+[Learn to think like Amanda](http://chartsnthings.tumblr.com/post/23348191031/amanda-cox-and-countrymen-chart-the-facebook-i-p-o) [or Kevin](http://kpq.github.io/)
 
 Discussion: 
 
@@ -96,8 +124,8 @@ If you’ve never used <a href="http://git-scm.com/">Git</a> or <a href="https:/
 ##If there's time: using an online example.
 Say you want to make an interactive map of the United States and you don't know where to start, but you DO know what you want your map to look and behave pretty much like [this one](http://bl.ocks.org/ansis/9368682874d9e8adda21) you've already seen. 
 
-<img src="leaflet-map.png">
 
+<div id='map'></div>
 
 What's next?
 
@@ -113,6 +141,111 @@ What's next?
 
 ##Homework
 
-Your only real assignment is to have your github page publishing correctly before the next class. For now, that means yourusername.github.io should be rendering your `index.html` page with your name and the phrase "Useful links for Kevin and Amanda." (We'll be adding more links later.)
+Your assignment is to: 
+
+1. Have your github page publishing correctly before the next class. For now, that means yourusername.github.io should be rendering your `index.html` page with your name and the phrase "Useful links for Kevin and Amanda." (We'll be adding more links later.)
+
+2. Bring data from all 50 states (or enough to be interesting) to class. This data should be of the type that could be shown on a map.
+
+
+
+<script type="text/javascript" src="http://leafletjs.com/examples/us-states.js"></script>
+<script type='text/javascript'>
+    // Based on the Leaflet example from http://leafletjs.com/examples/choropleth.html
+
+    var map = L.mapbox.map('map', 'examples.map-vyofok3q').setView([37.8, -96], 4);
+
+    var legend = L.mapbox.legendControl().addLegend(getLegendHTML()).addTo(map);
+
+    var popup = new L.Popup({ autoPan: false });
+
+    // statesData comes from the 'us-states.js' script included above
+    var statesLayer = L.geoJson(statesData,  {
+        style: getStyle,
+        onEachFeature: onEachFeature
+    }).addTo(map);
+
+    function getStyle(feature) {
+        return {
+            weight: 2,
+            opacity: 0.1,
+            color: 'black',
+            fillOpacity: 0.7,
+            fillColor: getColor(feature.properties.density)
+        };
+    }
+
+    // get color depending on population density value
+    function getColor(d) {
+        return d > 1000 ? '#8c2d04' :
+            d > 500  ? '#cc4c02' :
+            d > 200  ? '#ec7014' :
+            d > 100  ? '#fe9929' :
+            d > 50   ? '#fec44f' :
+            d > 20   ? '#fee391' :
+            d > 10   ? '#fff7bc' :
+            '#ffffe5';
+    }
+
+    function onEachFeature(feature, layer) {
+        layer.on({
+            mousemove: mousemove,
+            mouseout: mouseout,
+            click: zoomToFeature
+        });
+    }
+
+    var closeTooltip;
+
+    function mousemove(e) {
+        var layer = e.target;
+
+        popup.setLatLng(e.latlng);
+        popup.setContent('<h2>' + layer.feature.properties.name + '</h2>' +
+            layer.feature.properties.density + ' people per square mile');
+
+        if (!popup._map) popup.openOn(map);
+        window.clearTimeout(closeTooltip);
+
+        // highlight feature
+        layer.setStyle({
+            weight: 3,
+            opacity: 0.3,
+            fillOpacity: 0.9
+        });
+
+        if (!L.Browser.ie && !L.Browser.opera) {
+            layer.bringToFront();
+        }
+    }
+
+    function mouseout(e) {
+        statesLayer.resetStyle(e.target);
+        closeTooltip = window.setTimeout(function() {
+            map.closePopup();
+        }, 100);
+    }
+
+    function zoomToFeature(e) {
+        map.fitBounds(e.target.getBounds());
+    }
+
+    function getLegendHTML() {
+        var grades = [0, 10, 20, 50, 100, 200, 500, 1000],
+            labels = [],
+            from, to;
+
+        for (var i = 0; i < grades.length; i++) {
+            from = grades[i];
+            to = grades[i + 1];
+
+            labels.push(
+                '<i style="background:' + getColor(from + 1) + '"></i> ' +
+                from + (to ? '&ndash;' + to : '+'));
+        }
+
+        return '<span>People per square mile</span><br>' + labels.join('<br>');
+    }
+</script>
 
 
