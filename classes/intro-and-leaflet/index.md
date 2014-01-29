@@ -98,7 +98,6 @@ Say you want to make an interactive map of the United States and you don't know 
 
 <img src="leaflet-map.png">
 
-
 What's next?
 
 1. Open the page in a separate window and view the page source.
