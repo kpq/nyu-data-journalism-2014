@@ -16,7 +16,7 @@ Finally, we'll get inspired by some code we see online and use it for a quick de
 
 ##Introduction
 
-How Amanda Got Started [Great link #1](http://www.google.com) [Great link #1](http://www.google.com) [Great link #1](http://www.google.com)
+How Amanda Got Started [Great link #1](http://d.pr/i/XrmI) [Great link #1](http://www.nytimes.com/packages/html/newsgraphics/pages/hp/2008/2008-06-03-1800.html) [Great link #1](http://www.google.com)
 
 How Kevin Got Started [Great link #1](http://www.google.com) [Great link #1](http://www.google.com) [Great link #1](http://www.google.com)
 
