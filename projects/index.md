@@ -118,7 +118,7 @@ Slideshow:
 
 ## Project schedule
 
-By **noon on Wednesday, October 9**, we'd like you to post a link on your `dataviz-home` page to an HTML page with **three pitches** on it.
+By **noon on Date tk**, we'd like you to post a link on your `dataviz-home` page to an HTML page with **three pitches** on it.
 
 Each pitch should include:
 
@@ -154,7 +154,7 @@ Email kemanda with any questions.
 We'll be making sure your projects get done with this general outline.
 
 ##Date 0
-By **Tuesday, Oct. 22**, you should update your pitch page (or make a new one) with your final pitch for your project. Most of you will just edit one of your original pitches and incoporate our feedback from last week, but some of you may need to re-pitch a new idea or two.
+By **Date tk**, you should update your pitch page (or make a new one) with your final pitch for your project. Most of you will just edit one of your original pitches and incoporate our feedback from last week, but some of you may need to re-pitch a new idea or two.
 
 Under your pitch, include the following:
 
