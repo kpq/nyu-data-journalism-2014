@@ -82,7 +82,7 @@ Your job is to identify as many people as you can in the picture above.
  
 ##Basic skills when your data is bigger
 
-A digression: sometimes data is published to the web, but without context, it's hard to know whether it's interesting or not. Here's <a href = "http://schools.nyc.gov/AboutUs/data/Attendance.htm">an example</a> about 
+A digression: sometimes data is published to the web, but, without context, it's hard to know whether it's interesting or not. Here's <a href = "http://schools.nyc.gov/AboutUs/data/Attendance.htm">an example</a> about 
 <a href = "http://www.wnyc.org/story/fewer-faces-nyc-schools-after-storm/">NYC school attendance from WNYC.</a>
 It's easy to pull down this data every day, but, pretty quickly, it's going to get big enough that you will regret any cheating / manual labor you might have done in our earlier exercises today.
 
