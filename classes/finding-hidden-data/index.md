@@ -67,7 +67,7 @@ Now install [this Chrome extension](https://chrome.google.com/webstore/detail/js
 - In excel, generate a column that looks like this:
 
 	```html
-	<a href = 'http://www.fight4rx.org/map/getpharms3.php?address=11201'></a>11201</a>
+	<a href = 'http://www.fight4rx.org/map/getpharms3.php?address=11201'>11201</a>
 	```
 
 - Copy 10 of your links into a new html file.
