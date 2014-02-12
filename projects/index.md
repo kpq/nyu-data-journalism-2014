@@ -118,7 +118,7 @@ Slideshow:
 
 ## Project schedule
 
-By **noon on Wednesday, October 9**, we'd like you to post a link on your `dataviz-home` page to an HTML page with **three pitches** on it.
+By **class time on Feb 26**, we'd like you to post a link to your github page to an HTML page with **three pitches** on it.
 
 Each pitch should include:
 
@@ -153,8 +153,14 @@ Email kemanda with any questions.
 ##Timeline for project success
 We'll be making sure your projects get done with this general outline.
 
-##Date 0
-By **Tuesday, Oct. 22**, you should update your pitch page (or make a new one) with your final pitch for your project. Most of you will just edit one of your original pitches and incoporate our feedback from last week, but some of you may need to re-pitch a new idea or two.
+##Feb 26
+By class time on Feb 26, post a link to three pitches (like the one above) to your github page. We'll discuss them with you over the course of the week and help you settle on one.
+
+##March 5
+By class time on March 5, post a link to your final project pitch that takes into account our feedback.
+
+
+<!-- By **Date Feb 26**, you should update your pitch page (or make a new one) with your final pitch for your project. Most of you will just edit one of your original pitches and incoporate our feedback from last week, but some of you may need to re-pitch a new idea or two.
 
 Under your pitch, include the following:
 
@@ -166,10 +172,10 @@ Under your pitch, include the following:
 
 • A list of possible publications that might be interested in publishing your project
 
-• A list of questions you'd like to ask your data
+• A list of questions you'd like to ask your data -->
 
 
-
+<!-- 
 ##Date 1
 Your project should be approved, you should have your repo setup and your main dataset downloaded. You’ve started to examine your data in R or Excel or D3, and have a vague sense of what you want to make. You should be starting to contact your, er, contacts and setting up any interviews if needed. You should have identified any secondary datasets you'll need and should be collected them this week (like geo shapefiles, or census demographic info, etc...).
 
@@ -189,3 +195,4 @@ This will be a last minute sanity check. Everything should be mostly in place, a
 Your project must be published with a final URL by the beginning of class. You will give a brief overview of your project and are required to be gracious during your classmates thunderous applause.
 
 
+ -->
