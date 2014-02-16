@@ -53,8 +53,8 @@
 <p>Here is some data on <a href = "child-care-costs.xlsx">child care costs</a>. Let’s pretend we want to make a map to help with our analysis.</p>
 
 <ul>
-<li><p>Format the data to be ready for analyis, and possible merging with other datasets. This means the first row has headers, ideally without any spaces or special characters, and the state names are as normal as possible. A hint: you may want to google something like &ldquo;replace asterisks in excel.&rdquo; </p></li>
-<li><p>Remember <a href="http://bl.ocks.org/ansis/9368682874d9e8adda21">this guy</a>? Copy the code to your text editor, and reaqquaint yourself with how the colors get assigned.</p></li>
+<li><p>Format the data to be ready for analysis, and possible merging with other datasets. This means the first row has headers, ideally without any spaces or special characters, and the state names are as normal as possible. A hint: you may want to google something like &ldquo;replace asterisks in excel.&rdquo; </p></li>
+<li><p>Remember <a href="http://bl.ocks.org/ansis/9368682874d9e8adda21">this guy</a>? Copy the code to your text editor, and reacquaint yourself with how the colors get assigned.</p></li>
 <li><p>On the first line of the getStyle function add the following: <code>console.log(feature.properties)</code></p></li>
 <li><p>Turn your data into JSON properties with <a href="http://shancarter.github.io/mr-data-converter/">Mr. Data Converter</a>. </p></li>
 <li><p>In your code, add <br> <code>var childCare = </code>  and the result from Mr. Data Converter. </p></li>
@@ -65,7 +65,7 @@ using whatever header names you used. </p></li>
 <li><p>Figure out a way to change the colors on your map using childCareDict. It&rsquo;s okay to struggle for a little bit. <span style="color:white"><code style="background:white">fillColor: getColor(  childCareDict[feature.properties.name]  )</code> </span></p></li>
 <li><p>Adjust your colors, then fix your rollover and your key. <a href="http://colorbrewer2.org/">ColorBrewer</a> is a good resource for map palettes. And here&rsquo;s <a href="http://www.macwright.org/2013/02/18/literate-jenks.html">a good place</a> to start when thinking about breaks.</p></li>
 <li><p>If you are ahead, turn your map into something resembling journalism, with, say, a headline, and some sentences. A very rough example is <a href="map.html">here.</a> Notice that I switched to maptiles that don&rsquo;t scream &ldquo;here&rsquo;s where the oceans are.&rdquo; You can do the same thing to Fusion table maps with <a href="http://fusion-tables-api-samples.googlecode.com/svn/trunk/FusionTablesLayerWizard/src/index.html">saturation</a>.</p></li>
-<li><p>Push your map to your github account, and add a link from your index page. Let&rsquo;s make sure we&rsquo;re all using the tab key in Sublime Text and terminal to our advatange.</p></li>
+<li><p>Push your map to your github account, and add a link from your index page. Let&rsquo;s make sure we&rsquo;re all using the tab key in Sublime Text and terminal to our advantage.</p></li>
 </ul>
 
 <h2>Looking at data</h2>
@@ -96,7 +96,7 @@ blockquote p {
 
 <p>But it&rsquo;s about that time.</p>
 
-<p>The typical graduation rates reported for colleges are broken, in part because tranfer students are counted in the same way as drop-outs. How could you fix this? </p>
+<p>The typical graduation rates reported for colleges are broken, in part because transfer students are counted in the same way as drop-outs. How could you fix this? </p>
 
 <ul>
 <li><p>Some schools voluntarily give their progress data to a group called <a href="http://www.collegeportraits.org/">College Portraits</a>. Here is a <a href="http://www.collegeportraits.org/SC/USC-Upstate/tracker">sample report</a>. But even friendly people associated with that project don&rsquo;t know they have the data in a database. I suspect they do, but I&rsquo;m not sure. I have scraped the data, and done some work to standardize it for you <a href="college-grad-and-transfer-rates.xlsx">here</a>. For the extra curious, here is some <a href="collegeportraits.r">horrible code</a>.</p></li>

@@ -23,9 +23,9 @@ We'll try to form something closer to a coherent whole out of what we've learned
 
 Here is some data on <a href = "child-care-costs.xlsx">child care costs</a>. Let’s pretend we want to make a map to help with our analysis.
 
-- Format the data to be ready for analyis, and possible merging with other datasets. This means the first row has headers, ideally without any spaces or special characters, and the state names are as normal as possible. A hint: you may want to google something like "replace asterisks in excel." 
+- Format the data to be ready for analysis, and possible merging with other datasets. This means the first row has headers, ideally without any spaces or special characters, and the state names are as normal as possible. A hint: you may want to google something like "replace asterisks in excel." 
 
-- Remember [this guy](http://bl.ocks.org/ansis/9368682874d9e8adda21)? Copy the code to your text editor, and reaqquaint yourself with how the colors get assigned.
+- Remember [this guy](http://bl.ocks.org/ansis/9368682874d9e8adda21)? Copy the code to your text editor, and reacquaint yourself with how the colors get assigned.
 
 - On the first line of the getStyle function add the following: <code>console.log(feature.properties)</code>
 
@@ -45,7 +45,7 @@ using whatever header names you used.
 
 - If you are ahead, turn your map into something resembling journalism, with, say, a headline, and some sentences. A very rough example is <a href="map.html">here.</a> Notice that I switched to maptiles that don't scream "here's where the oceans are." You can do the same thing to Fusion table maps with [saturation](http://fusion-tables-api-samples.googlecode.com/svn/trunk/FusionTablesLayerWizard/src/index.html).
 
-- Push your map to your github account, and add a link from your index page. Let's make sure we're all using the tab key in Sublime Text and terminal to our advatange.
+- Push your map to your github account, and add a link from your index page. Let's make sure we're all using the tab key in Sublime Text and terminal to our advantage.
 
 ##Looking at data
 
@@ -75,7 +75,7 @@ So far, we haven't really done any journalism. That's okay, because, as Nietzsch
 
 But it's about that time.
 
-The typical graduation rates reported for colleges are broken, in part because tranfer students are counted in the same way as drop-outs. How could you fix this? 
+The typical graduation rates reported for colleges are broken, in part because transfer students are counted in the same way as drop-outs. How could you fix this? 
 
 - Some schools voluntarily give their progress data to a group called [College Portraits](http://www.collegeportraits.org/). Here is a [sample report](http://www.collegeportraits.org/SC/USC-Upstate/tracker). But even friendly people associated with that project don't know they have the data in a database. I suspect they do, but I'm not sure. I have scraped the data, and done some work to standardize it for you [here](college-grad-and-transfer-rates.xlsx). For the extra curious, here is some [horrible code](collegeportraits.r).
 
