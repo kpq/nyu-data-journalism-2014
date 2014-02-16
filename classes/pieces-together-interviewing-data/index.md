@@ -10,14 +10,12 @@ We'll try to form something closer to a coherent whole out of what we've learned
 - Sign up for a critique date, in twos or threes, on the [critique schedule wiki](https://github.com/kpq/nyu-data-journalism-2014/wiki/Critique-Schedule)
 - And, seriously, if your info is not right on the [main wiki](https://github.com/kpq/nyu-data-journalism-2014/wiki/Class-wiki), you are not on track for success.
 
-
 ## Critique + Discussion: 
 - Lilah and Erin
 - Your reading homework from last week.
 - Some scraping things we might have talked about include [WNYC's school attendance work](http://www.wnyc.org/story/school-was-open-most-parents-kept-students-home/) and [hiding failure](http://misener.org/kickstarter-hides-failure/)
 - [The essence of programming](https://twitter.com/fjsteele/status/434249935316615168/photo/1)
 - The Data Journalism Handbook includes a nice list of [types of data journalism stories.](http://datajournalismhandbook.org/1.0/en/understanding_data_5.html)
-
 
 ## Putting the pieces together
 
