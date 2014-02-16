@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src='http://api.tiles.mapbox.com/mapbox.js/v1.0.0/mapbox.js'></script>
+    <link href='http://api.tiles.mapbox.com/mapbox.js/v1.0.0/mapbox.css' rel='stylesheet' />
+    <!--[if lte IE 8]>
+    <link href='http://api.tiles.mapbox.com/mapbox.js/v1.0.0/mapbox.ie.css' rel='stylesheet' >
+    <![endif]-->
+    <style>
+        body { margin:auto; padding:0; width: 70%; font-family: Arial; font-size: 15px;}
+        #map { position:relative; top:0; bottom:0; width:100%; height:500px; margin: auto; }
+        h1 { text-align: center; }
+        p { line-height: 1.5em; }
+    </style>
+</head>
+<body>
+<style>
+    .map-legend i {
+        width: 18px;
+        height: 18px;
+        float: left;
+        margin-right: 8px;
+        opacity: 0.7;
+    }
+    .leaflet-popup-close-button {
+        display: none;
+    }
+    .leaflet-popup-content-wrapper {
+        pointer-events: none;
+    }
+</style>
+
+<h1>Headline here</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.</p>
+
+
+<div id='map'></div>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+<script type="text/javascript" src="http://leafletjs.com/examples/us-states.js"></script>
+<script type='text/javascript'>
+
+
+var childCare = [{"state":"Oregon","child":18.6},
+{"state":"New York","child":16.5},
+{"state":"Minnesota","child":15.5},
+{"state":"Massachusetts","child":15.1},
+{"state":"Colorado","child":15},
+{"state":"California","child":14.8},
+{"state":"Illinois","child":14.8},
+{"state":"Hawaii","child":14.4},
+{"state":"Washington","child":14.3},
+{"state":"Kansas","child":13.7},
+{"state":"Nevada","child":13.4},
+{"state":"Michigan","child":13},
+{"state":"Rhode Island","child":12.9},
+{"state":"Vermont","child":12.6},
+{"state":"Maine","child":12.6},
+{"state":"Arizona","child":12.4},
+{"state":"Wisconsin","child":12.3},
+{"state":"Pennsylvania","child":12.2},
+{"state":"New Hampshire","child":12.2},
+{"state":"North Carolina","child":12.1},
+{"state":"Montana","child":12.1},
+{"state":"Connecticut","child":12},
+{"state":"West Virginia","child":11.9},
+{"state":"Florida","child":11.7},
+{"state":"Texas","child":11.7},
+{"state":"Maryland","child":11.7},
+{"state":"Iowa","child":11.6},
+{"state":"Wyoming","child":11.6},
+{"state":"New Mexico","child":11.3},
+{"state":"Alaska","child":11.3},
+{"state":"Oklahoma","child":11.1},
+{"state":"Idaho","child":11.1},
+{"state":"Utah","child":11.1},
+{"state":"Missouri","child":11},
+{"state":"Indiana","child":10.9},
+{"state":"Ohio","child":10.8},
+{"state":"Virginia","child":10.6},
+{"state":"Nebraska","child":10.1},
+{"state":"New Jersey","child":9.9},
+{"state":"North Dakota","child":9.9},
+{"state":"Delaware","child":9.8},
+{"state":"Georgia","child":9.6},
+{"state":"Arkansas","child":9.3},
+{"state":"South Carolina","child":8.8},
+{"state":"Kentucky","child":8.6},
+{"state":"Tennessee","child":8.5},
+{"state":"South Dakota","child":8.1},
+{"state":"Alabama","child":7.6},
+{"state":"Mississippi","child":7.4},
+{"state":"Louisiana","child":7}];
+var childCareDict = {};
+childCare.forEach( function(row) { childCareDict[row.state] = row.child } );
+
+    // Based on the Leaflet example from http://leafletjs.com/examples/choropleth.html
+
+    var map = L.mapbox.map('map', 'examples.map-20v6611k').setView([37.8, -96], 4);
+
+    var legend = L.mapbox.legendControl().addLegend(getLegendHTML()).addTo(map);
+
+    var popup = new L.Popup({ autoPan: false });
+
+    // statesData comes from the 'us-states.js' script included above
+    var statesLayer = L.geoJson(statesData,  {
+        style: getStyle,
+        onEachFeature: onEachFeature
+    }).addTo(map);
+
+
+    function getStyle(feature) {
+        console.log(feature.properties)
+        return {
+            weight: 2,
+            opacity: 0.1,
+            color: 'black',
+            fillOpacity: 0.7,
+            fillColor: getColor(  childCareDict[feature.properties.name]  )
+        };
+    }
+
+
+
+    // get color depending on population density value
+    function getColor(d) {
+        return d > 15 ? '#f03b20' :
+            d > 10   ? '#feb24c' :
+            d > 5   ? '#ffeda0' :
+            '#ffffe5';
+    }
+
+    function onEachFeature(feature, layer) {
+        layer.on({
+            mousemove: mousemove,
+            mouseout: mouseout,
+            click: zoomToFeature
+        });
+    }
+
+    var closeTooltip;
+
+    function mousemove(e) {
+        var layer = e.target;
+
+        popup.setLatLng(e.latlng);
+        popup.setContent('<h2>' + layer.feature.properties.name + '</h2>' +
+            childCareDict[layer.feature.properties.name] + '% of income');
+
+        if (!popup._map) popup.openOn(map);
+        window.clearTimeout(closeTooltip);
+
+        // highlight feature
+        layer.setStyle({
+            weight: 3,
+            opacity: 0.3,
+            fillOpacity: 0.9
+        });
+
+        if (!L.Browser.ie && !L.Browser.opera) {
+            layer.bringToFront();
+        }
+    }
+
+    function mouseout(e) {
+        statesLayer.resetStyle(e.target);
+        closeTooltip = window.setTimeout(function() {
+            map.closePopup();
+        }, 100);
+    }
+
+    function zoomToFeature(e) {
+        map.fitBounds(e.target.getBounds());
+    }
+
+    function getLegendHTML() {
+        var grades = [5, 10, 15],
+            labels = [],
+            from, to;
+
+        for (var i = 0; i < grades.length; i++) {
+            from = grades[i];
+            to = grades[i + 1];
+
+            labels.push(
+                '<i style="background:' + getColor(from + 1) + '"></i> ' +
+                from + (to ? ' &ndash; ' + to + "%" : '% or more'));
+        }
+
+        return '<span><b>Cost of infant care</b><br><b>in a center,</b><br>as a share of<br>median income for<br>married couples<br></span><br>' + labels.join('<br>');
+    }
+</script>
+</body>
+</html>

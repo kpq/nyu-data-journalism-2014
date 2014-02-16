@@ -7,14 +7,14 @@ title: Putting the Pieces Together + Some Journalism
 We'll try to form something closer a coherent whole out of what we've done so far. And then practice interviewing spreadsheets.
 
 ## Housekeeping
-- Sign up for a critique date, in twos or threes on the [wiki](https://github.com/kpq/nyu-data-journalism-2014/wiki/Critique-Schedule)
+- Sign up for a critique date, in twos or threes, on the [critique schedule wiki](https://github.com/kpq/nyu-data-journalism-2014/wiki/Critique-Schedule)
+- And, seriously, if your info is not right on the [main wiki](https://github.com/kpq/nyu-data-journalism-2014/wiki/Class-wiki) you are not on track for success.
 
 
-## Critique: 
-Lilah and Erin are critiquing [tk](http://link.com).
-
-## Discussion: 
-- The reading you did.
+## Critique + Discussion: 
+- Lilah and Erin
+- Your reading homework from last week.
+- Some scraping things we meant to talk about include [WNYC's school attendance work](http://www.wnyc.org/story/school-was-open-most-parents-kept-students-home/) and [hiding failure](http://misener.org/kickstarter-hides-failure/)
 - The Data Journalism Handbook includes a nice list of [types of data journalism stories.](http://datajournalismhandbook.org/1.0/en/understanding_data_5.html)
 
 
@@ -32,26 +32,48 @@ Here is some data on <a href = "child-care-costs.xlsx">child care costs</a>. Let
 
 - Turn your data into JSON properties with [Mr. Data Converter](http://shancarter.github.io/mr-data-converter/). 
 
-- In your code, add <br><code>var childCare = </code> and the result from Mr. Data Converter. 
+- In your code, add <br> <code>var childCare = </code>  and the result from Mr. Data Converter. 
 
 - After that, add <br><code>var childCareDict  = {};</code><br> and <br><code>
-childCare.forEach( function(row) { childCareDict[row.state] = row.child });</code><br>
-where you use whatever header name you used in row.child. 
+childCare.forEach( function(row) { childCareDict[row.state] = row.child });</code><br>, 
+using whatever header names you used. 
 
-- Adjust your colors and fix your rollover, and your key. [ColorBrewer](http://colorbrewer2.org/) is a good resource for map palettes. Here's [a good place](http://www.macwright.org/2013/02/18/literate-jenks.html) to start when thinking about breaks.
+- Adjust your colors and fix your rollover, and your key. [ColorBrewer](http://colorbrewer2.org/) is a good resource for map palettes. And here's [a good place](http://www.macwright.org/2013/02/18/literate-jenks.html) to start when thinking about breaks.
+
+- If you are ahead, turn your map into something resembling journalism, with, say, a headline, and some setences. A very rough example is <a href="map.html">here.</a> Notice that I switched to maptiles that don't scream "here's where the oceans are." You can do the same thing to Fusion table maps with [saturation](http://fusion-tables-api-samples.googlecode.com/svn/trunk/FusionTablesLayerWizard/src/index.html).
 
 - Push your map to your github account, and add a link from your index page. Let's make sure we're all using the tab key in Sublime Text and terminal to our advatange.
 
-
 ##Looking at data
-The standard graduation rates reported for colleges are broken. 
+
+So far, we haven't really done any journalism. That's okay, because, as Nietzsche says, "He who would learn to fly one day must first learn to stand and walk and run and climb and dance; one cannot fly into flying." But it's about that time.
 
 
-- Let's come up with a gameplan. This is a real project.
+<style type="text/css">
+	.credit{text-align: right; font-size: 10px; color:#444; margin-top: -60px;}
+</style>
+<a href = "http://www.myfavtoys.com/buy/west3010/slingshot-flying-monkey">
+<img style="width:80%" src="http://1.bp.blogspot.com/-IkhIk3TKD_Q/TwukDXh-FXI/AAAAAAAAAcQ/kAFlf9Jrtx0/s1600/image012.jpg"></a>
+<p class = "credit">Slingshot Flying [Data] Monkeys are only <a href = "http://www.myfavtoys.com/buy/west3010/slingshot-flying-monkey">$6.95</a> in Illinois</p>
+</a>
+
+
+The typical graduation rates reported for colleges are broken, in part because tranfer students are counted in the same way as drop-outs. How could you fix this? 
+
+- Some schools voluntarily give their progress data to a group called [College Portraits](http://www.collegeportraits.org/). Here is a [sample report](http://www.collegeportraits.org/SC/USC-Upstate/tracker). But even friendly people associated with that project don't know they have the data in a database. I suspect they do, but I'm not sure. I have scraped the data, and done some work to standardize it for you [here](college-grad-and-transfer-rates.xlsx). For the extra curious, here is some [horrible code](collegeportraits.r).
+
+- Note that there are some small difference between the [2013 reports](http://www.collegeportraits.org/AL/AU/tracker) and the [2012 ones](http://www.collegeportraits.org/AL/JSU/tracker).
+
+- Take 20 minutes to explore the data, generating a list of questions, facts, and weirdness you uncover [here](https://docs.google.com/document/d/1QVt45d0JfwLfa0RQtjULr68jZeWFKqEN6Ij4RU5sGVY/edit#). Your goal is to write questions and that are both answerable and could turn into interesting ledes. 
+
+- Let's come up with a gameplan for collecting the data for the biggest schools. What do we need? 
+
+- Let's practice aggregating to see how far we have to go. Here's [something](list-of-schools.csv) for that. 
+
+- In the doc with your questions, let's draft a request for data from a school.
 
 
 
 ##Homework
 
 - Project pitches should be on the internet before next week's class.
-
