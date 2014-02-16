@@ -4,7 +4,7 @@ week: 4
 title: Putting the Pieces Together + Some Journalism
 ---
 
-We'll try to form something closer a coherent whole out of what we've done so far. And then practice interviewing spreadsheets.
+We'll try to form something closer to a coherent whole out of what we've learned so far. And then we'll practice interviewing spreadsheets.
 
 ## Housekeeping
 - Sign up for a critique date, in twos or threes, on the [critique schedule wiki](https://github.com/kpq/nyu-data-journalism-2014/wiki/Critique-Schedule)
@@ -14,7 +14,8 @@ We'll try to form something closer a coherent whole out of what we've done so fa
 ## Critique + Discussion: 
 - Lilah and Erin
 - Your reading homework from last week.
-- Some scraping things we meant to talk about include [WNYC's school attendance work](http://www.wnyc.org/story/school-was-open-most-parents-kept-students-home/) and [hiding failure](http://misener.org/kickstarter-hides-failure/)
+- Some scraping things we might have talked about include [WNYC's school attendance work](http://www.wnyc.org/story/school-was-open-most-parents-kept-students-home/) and [hiding failure](http://misener.org/kickstarter-hides-failure/)
+- [The essence of programming](https://twitter.com/fjsteele/status/434249935316615168/photo/1)
 - The Data Journalism Handbook includes a nice list of [types of data journalism stories.](http://datajournalismhandbook.org/1.0/en/understanding_data_5.html)
 
 
@@ -68,7 +69,9 @@ blockquote p {
 </style>
 
 So far, we haven't really done any journalism. That's okay, because, as Nietzsche said, 
-<blockquote><p>"He who would learn to <a href = "http://1.bp.blogspot.com/-IkhIk3TKD_Q/TwukDXh-FXI/AAAAAAAAAcQ/kAFlf9Jrtx0/s400/image012.jpg">fly</a> one day must first learn to stand and walk and run and climb and dance; one cannot fly into flying."</p></blockquote> But it's about that time.
+<blockquote><p>He who would learn to <a href = "http://1.bp.blogspot.com/-IkhIk3TKD_Q/TwukDXh-FXI/AAAAAAAAAcQ/kAFlf9Jrtx0/s400/image012.jpg">fly</a> one day must first learn to stand and walk and run and climb and dance; one cannot fly into flying.</p></blockquote> 
+
+But it's about that time.
 
 The typical graduation rates reported for colleges are broken, in part because tranfer students are counted in the same way as drop-outs. How could you fix this? 
 
@@ -88,4 +91,5 @@ The typical graduation rates reported for colleges are broken, in part because t
 ##Homework
 
 - Project pitches should be on the internet before next week's class.
+- And, seriously, if your info is not right on the [main wiki](https://github.com/kpq/nyu-data-journalism-2014/wiki/Class-wiki), you are not on track for success.
 
