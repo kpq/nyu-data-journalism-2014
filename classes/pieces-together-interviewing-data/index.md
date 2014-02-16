@@ -8,7 +8,7 @@ We'll try to form something closer a coherent whole out of what we've done so fa
 
 ## Housekeeping
 - Sign up for a critique date, in twos or threes, on the [critique schedule wiki](https://github.com/kpq/nyu-data-journalism-2014/wiki/Critique-Schedule)
-- And, seriously, if your info is not right on the [main wiki](https://github.com/kpq/nyu-data-journalism-2014/wiki/Class-wiki) you are not on track for success.
+- And, seriously, if your info is not right on the [main wiki](https://github.com/kpq/nyu-data-journalism-2014/wiki/Class-wiki), you are not on track for success.
 
 
 ## Critique + Discussion: 

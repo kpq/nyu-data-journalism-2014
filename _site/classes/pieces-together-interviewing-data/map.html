@@ -28,6 +28,10 @@
     .leaflet-popup-content-wrapper {
         pointer-events: none;
     }
+    b{
+        font-size: 14px;
+        line-height: 1.1em;
+    }
 </style>
 
 <h1>Headline here</h1>
@@ -207,7 +211,7 @@ childCare.forEach( function(row) { childCareDict[row.state] = row.child } );
                 from + (to ? ' &ndash; ' + to + "%" : '% or more'));
         }
 
-        return '<span><b>Cost of infant care</b><br><b>in a center,</b><br>as a share of<br>median income for<br>married couples<br></span><br>' + labels.join('<br>');
+        return '<span><b>Cost of infant</b><br><b>care in a center</b><br>As a share of<br>median income for<br>married couples<br></span><br>' + labels.join('<br>');
     }
 </script>
 </body>
