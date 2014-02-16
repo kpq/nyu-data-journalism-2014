@@ -81,7 +81,7 @@ The typical graduation rates reported for colleges are broken, in part because t
 
 - Note that there are some small difference between the [2013 reports](http://www.collegeportraits.org/AL/AU/tracker) and the [2012 ones](http://www.collegeportraits.org/AL/JSU/tracker).
 
-- Take 20 minutes to explore the data, generating a list of questions, facts, and weirdness you uncover [here](https://docs.google.com/document/d/1QVt45d0JfwLfa0RQtjULr68jZeWFKqEN6Ij4RU5sGVY/edit#). Your goal is to write questions and that are both answerable and could turn into interesting ledes. 
+- Take 20 minutes to explore the data, generating a list of questions, facts, and weirdness you uncover [here](https://docs.google.com/document/d/1QVt45d0JfwLfa0RQtjULr68jZeWFKqEN6Ij4RU5sGVY/edit#). Your goal is questions that are both answerable and could turn into interesting ledes. 
 
 - Let's come up with a gameplan for collecting the data for the biggest schools. What do we need? 
 
