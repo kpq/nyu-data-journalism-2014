@@ -37,9 +37,13 @@ Here is some data on <a href = "child-care-costs.xlsx">child care costs</a>. Let
 childCare.forEach( function(row) { childCareDict[row.state] = row.child });</code><br>, 
 using whatever header names you used. 
 
-- Adjust your colors and fix your rollover, and your key. [ColorBrewer](http://colorbrewer2.org/) is a good resource for map palettes. And here's [a good place](http://www.macwright.org/2013/02/18/literate-jenks.html) to start when thinking about breaks.
+- Try something like <code>console.log(childCareDict["Oregon"]);</code>
 
-- If you are ahead, turn your map into something resembling journalism, with, say, a headline, and some setences. A very rough example is <a href="map.html">here.</a> Notice that I switched to maptiles that don't scream "here's where the oceans are." You can do the same thing to Fusion table maps with [saturation](http://fusion-tables-api-samples.googlecode.com/svn/trunk/FusionTablesLayerWizard/src/index.html).
+- Figure out a way to change the colors on your map using childCareDict. It's okay to struggle for a little bit. <span style="color:white"><code style="background:white">fillColor: getColor(  childCareDict[feature.properties.name]  )</code> </span>
+
+- Adjust your colors, then fix your rollover and your key. [ColorBrewer](http://colorbrewer2.org/) is a good resource for map palettes. And here's [a good place](http://www.macwright.org/2013/02/18/literate-jenks.html) to start when thinking about breaks.
+
+- If you are ahead, turn your map into something resembling journalism, with, say, a headline, and some sentences. A very rough example is <a href="map.html">here.</a> Notice that I switched to maptiles that don't scream "here's where the oceans are." You can do the same thing to Fusion table maps with [saturation](http://fusion-tables-api-samples.googlecode.com/svn/trunk/FusionTablesLayerWizard/src/index.html).
 
 - Push your map to your github account, and add a link from your index page. Let's make sure we're all using the tab key in Sublime Text and terminal to our advatange.
 

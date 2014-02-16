@@ -61,8 +61,10 @@
 <li><p>After that, add <br><code>var childCareDict  = {};</code><br> and <br><code>
 childCare.forEach( function(row) { childCareDict[row.state] = row.child });</code><br>, 
 using whatever header names you used. </p></li>
-<li><p>Adjust your colors and fix your rollover, and your key. <a href="http://colorbrewer2.org/">ColorBrewer</a> is a good resource for map palettes. And here&rsquo;s <a href="http://www.macwright.org/2013/02/18/literate-jenks.html">a good place</a> to start when thinking about breaks.</p></li>
-<li><p>If you are ahead, turn your map into something resembling journalism, with, say, a headline, and some setences. A very rough example is <a href="map.html">here.</a> Notice that I switched to maptiles that don&rsquo;t scream &ldquo;here&rsquo;s where the oceans are.&rdquo; You can do the same thing to Fusion table maps with <a href="http://fusion-tables-api-samples.googlecode.com/svn/trunk/FusionTablesLayerWizard/src/index.html">saturation</a>.</p></li>
+<li><p>Try something like <code>console.log(childCareDict[&quot;Oregon&quot;]);</code></p></li>
+<li><p>Figure out a way to change the colors on your map using childCareDict. It&rsquo;s okay to struggle for a little bit. <span style="color:white"><code style="background:white">fillColor: getColor(  childCareDict[feature.properties.name]  )</code> </span></p></li>
+<li><p>Adjust your colors, then fix your rollover and your key. <a href="http://colorbrewer2.org/">ColorBrewer</a> is a good resource for map palettes. And here&rsquo;s <a href="http://www.macwright.org/2013/02/18/literate-jenks.html">a good place</a> to start when thinking about breaks.</p></li>
+<li><p>If you are ahead, turn your map into something resembling journalism, with, say, a headline, and some sentences. A very rough example is <a href="map.html">here.</a> Notice that I switched to maptiles that don&rsquo;t scream &ldquo;here&rsquo;s where the oceans are.&rdquo; You can do the same thing to Fusion table maps with <a href="http://fusion-tables-api-samples.googlecode.com/svn/trunk/FusionTablesLayerWizard/src/index.html">saturation</a>.</p></li>
 <li><p>Push your map to your github account, and add a link from your index page. Let&rsquo;s make sure we&rsquo;re all using the tab key in Sublime Text and terminal to our advatange.</p></li>
 </ul>
 
