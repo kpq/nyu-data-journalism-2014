@@ -46,17 +46,29 @@ using whatever header names you used.
 
 ##Looking at data
 
-So far, we haven't really done any journalism. That's okay, because, as Nietzsche says, "He who would learn to fly one day must first learn to stand and walk and run and climb and dance; one cannot fly into flying." But it's about that time.
-
-
-<style type="text/css">
-	.credit{text-align: right; font-size: 10px; color:#444; margin-top: -60px;}
+<style>
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
 </style>
-<a href = "http://www.myfavtoys.com/buy/west3010/slingshot-flying-monkey">
-<img style="width:80%" src="http://1.bp.blogspot.com/-IkhIk3TKD_Q/TwukDXh-FXI/AAAAAAAAAcQ/kAFlf9Jrtx0/s1600/image012.jpg"></a>
-<p class = "credit">Slingshot Flying [Data] Monkeys are only <a href = "http://www.myfavtoys.com/buy/west3010/slingshot-flying-monkey">$6.95</a> in Illinois</p>
-</a>
 
+So far, we haven't really done any journalism. That's okay, because, as Nietzsche said, 
+<blockquote><p>"He who would learn to <a href = "http://1.bp.blogspot.com/-IkhIk3TKD_Q/TwukDXh-FXI/AAAAAAAAAcQ/kAFlf9Jrtx0/s400/image012.jpg">fly</a> one day must first learn to stand and walk and run and climb and dance; one cannot fly into flying."</p></blockquote> But it's about that time.
 
 The typical graduation rates reported for colleges are broken, in part because tranfer students are counted in the same way as drop-outs. How could you fix this? 
 
@@ -73,7 +85,7 @@ The typical graduation rates reported for colleges are broken, in part because t
 - In the doc with your questions, let's draft a request for data from a school.
 
 
-
 ##Homework
 
 - Project pitches should be on the internet before next week's class.
+
