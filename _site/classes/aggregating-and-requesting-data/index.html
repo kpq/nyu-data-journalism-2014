@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Aggregating</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/assets/base.css">
+        <link rel="stylesheet" href="/assets/syntax.css">
+
+        <!-- Custom CSS -->
+        <!-- <link rel="stylesheet" href="/assets/main.css"> -->
+
+        <script src="/assets/d3.v3.min.js" charset="utf-8"></script>
+        <script src="/assets/topojson.v1.min.js" charset="utf-8"></script>
+        <script src="/assets/queue.v1.min.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <div class="main">
+
+            <header>
+  <a href="/">NYU — Spring 2014</a> / <span>Week 5</span>
+</header>
+
+<h1>Aggregating</h1>
+
+<div class="lesson">
+  <p>In our quest to master &ldquo;sort, filter, aggregate, merge,&rdquo; we forgot aggregate.</p>
+
+<h2>Housekeeping</h2>
+
+<ul>
+<li><p>Six of you have not signed up for a date on the <a href="https://github.com/kpq/nyu-data-journalism-2014/wiki/Critique-Schedule">critique wiki</a>. </p></li>
+<li><p>Learning how to learn, a <a href="http://kiln.it/">Kiln</a> example with <a href="http://jsfiddle.net/Y3Jp6/">jsfiddle</a></p></li>
+<li><p>Should we talk about <a href="super-limited.html">enough html</a> to make your work look less terrible?</p></li>
+</ul>
+
+<h2>Solving your problems + aggregate warm-ups</h2>
+
+<ul>
+<li><p>Let&rsquo;s start with a <a href="yoga-journal-anatomical-focus.csv">smaller dataset</a> about the <a href="http://www.yogajournal.com/poses/finder/anatomical_focus">anatomical focus of yoga poses</a>, as listed on yogajournal.com.</p>
+
+<ul>
+<li>What area of the body has the most poses listed?</li>
+<li>What pose shows up the most often?</li>
+<li>What are all the poses that focus on both the brain and the calves?</li>
+</ul></li>
+<li><p>We also have a <a href="aamaadmiparty.csv">larger dataset</a> about <a href="http://www.aamaadmiparty.org/donation-list">donations</a> to a new political party in India. <a href="aamaadmipartyDonations.rb">Feel the power course</a>. </p>
+
+<ul>
+<li>The biggest donations?</li>
+<li>Amount received from people in each country?</li>
+<li>The typical donation size?</li>
+<li>Average donation size by country?</li>
+<li>Biggest days?</li>
+</ul></li>
+</ul>
+
+<h2>Where we left off.</h2>
+
+<ul>
+<li>Don&rsquo;t try to be too complicated at the beginning. Start with very easy questions - think averages, top 10 lists, outliers. After you have those answers, then you can add fanciness.</li>
+<li>We are looking for things that we don&rsquo;t expect. <a href="http://www.washingtonmonthly.com/college_guide/rankings_2013/national_university_rank.php">Washington Monthly&rsquo;s rankings</a> are based on the same idea.</li>
+<li>Find two schools that with similar characteristics, but very different graduation rates.</li>
+</ul>
+
+<h2>Expanding our college graduation sample. If we were to try, how far would we have to go?</h2>
+
+<p>Here&rsquo;s <a href="../pieces-together-interviewing-data/list-of-schools.csv">a list of schools</a> for that. How many schools would we have to contact if we wanted to cover, say, half of the nation&rsquo;s undergraduates? 75%? How else could we restrict our sample?</p>
+
+<h2>Write our letter.</h2>
+
+<p>Let&rsquo;s do it together <a href="https://docs.google.com/document/d/1QVt45d0JfwLfa0RQtjULr68jZeWFKqEN6Ij4RU5sGVY/edit#">here</a>.</p>
+
+<h2>Homework</h2>
+
+<p>You have two choices. You may fill out 20 rows with contact information in <a href="https://docs.google.com/spreadsheet/ccc?key=0AvKWOz9eYW7ydGxfNnRGWnI4Vm9mT0thRnc2U2dSYWc#gid=0">this document</a>. Or you may embark on your own data collection project of a similar scale. If you choose the later, please push it to your github page.</p>
+
+</div>
+
+
+        </div> <!-- /main -->
+
+        <script src="/assets/base.js" charset="utf-8"></script>
+
+    </body>
+</html>
