@@ -13,6 +13,8 @@ In our quest to master "sort, filter, aggregate, merge," we forgot aggregate.
 
 - Should we talk about [enough html](super-limited.html) to make your work look less terrible?
 
+- The NICAR conference is going on this week. [Some materials](http://blog.chryswu.com/2014/02/21/nicar14-slides-tutorials-links-tools/). [Some ideas](https://docs.google.com/spreadsheet/ccc?key=0AlAO8PborOXDdG81U19NTGM3WVJ3cS1KS0p5dTZyekE&usp=sharing#gid=0). [The mailing list](http://www.ire.org/resource-center/listservs/subscribe-nicar-l/)
+
 ## Solving your problems + aggregate warm-ups
 
 - Let's start with a [smaller dataset](yoga-journal-anatomical-focus.csv) about the [anatomical focus of yoga poses](http://www.yogajournal.com/poses/finder/anatomical_focus), as listed on yogajournal.com.
