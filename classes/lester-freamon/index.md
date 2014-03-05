@@ -10,7 +10,7 @@ The big 4 – sorting, filtering, aggregating and merging – are enough to he
 
 - General thoughts on project pitches: think small + manageable
 - Project requirements and [a look forward](../projects/)
-- Sarah, Cayleigh, & Kristin are leading a discussion on [TKTKTKT](http://www.google.com)
+- Sarah, Cayleigh, & Kristin are leading a discussion on [drug labels](http://projects.propublica.org/drug-labels/)
 - When things are [broken](http://jigsaw.w3.org/css-validator/).
 
 ##Part 1: Data in the real world
