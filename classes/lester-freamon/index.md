@@ -61,6 +61,20 @@ Unfortunately, data doesn't always come formatted the way we like. Let's take a 
 30. Here's the <a href="http://www.nytimes.com/interactive/2013/01/29/us/where-50000-guns-in-chicago-came-from.html?ref=us">NYT take</a> and <a href="http://www.nytimes.com/2013/01/30/us/strict-chicago-gun-laws-cant-stem-fatal-shots.html?pagewanted=all">story</a>.
 
 ## Where we left off.
+The typical graduation rates reported for colleges are broken, in part because transfer students are counted in the same way as drop-outs. How could you fix this? 
+
+- Some schools voluntarily give their progress data to a group called [College Portraits](http://www.collegeportraits.org/). Here is a [sample report](http://www.collegeportraits.org/SC/USC-Upstate/tracker). But even friendly people associated with that project don't know they have the data in a database. I suspect they do, but I'm not sure. I have scraped the data, and done some work to standardize it for you [here](college-grad-and-transfer-rates.xlsx). For the extra curious, here is some [horrible code](collegeportraits.r).
+
+- Note that there are some small difference between the [2013 reports](http://www.collegeportraits.org/AL/AU/tracker) and the [2012 ones](http://www.collegeportraits.org/AL/JSU/tracker).
+
+- Take 20 minutes to explore the data, generating a list of questions, facts, and weirdness you uncover [here](https://docs.google.com/document/d/1QVt45d0JfwLfa0RQtjULr68jZeWFKqEN6Ij4RU5sGVY/edit#). Your goal is questions that are both answerable and could turn into interesting ledes. 
+
+- Let's come up with a gameplan for collecting the data for the biggest schools. What do we need? 
+
+- Let's practice aggregating to see how far we have to go. Here's [something](list-of-schools.csv) for that. 
+
+- In the doc with your questions, let's draft a request for data from a school.
+
 - Don't try to be too complicated at the beginning. Start with very easy questions - think averages, top 10 lists, outliers. After you have those answers, then you can add fanciness.
 - We are looking for things that we don't expect. [Washington Monthly's rankings](http://www.washingtonmonthly.com/college_guide/rankings_2013/national_university_rank.php) are based on the same idea.
 - Find two schools that with similar characteristics, but very different graduation rates.
@@ -74,4 +88,4 @@ Here's [a list of schools](../pieces-together-interviewing-data/list-of-schools.
 Let's do it together [here](https://docs.google.com/document/d/1QVt45d0JfwLfa0RQtjULr68jZeWFKqEN6Ij4RU5sGVY/edit#).
 
 ##Homework
-You have two choices. You may fill out 20 rows with contact information in [this document](https://docs.google.com/spreadsheet/ccc?key=0AvKWOz9eYW7ydGxfNnRGWnI4Vm9mT0thRnc2U2dSYWc#gid=0). Or you may embark on your own data collection project of a similar scale. If you choose the later, please push it to your github page.
+You have two choices. You may fill out 40 rows with contact information in [this document](https://docs.google.com/spreadsheet/ccc?key=0AvKWOz9eYW7ydGxfNnRGWnI4Vm9mT0thRnc2U2dSYWc#gid=0). Or you may embark on your own data collection project of a similar scale. If you choose the later, please push it to your github page.
