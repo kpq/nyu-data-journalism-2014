@@ -9,8 +9,8 @@ We've had a lot of practice breaking down other applications and talking about h
 ##Housekeeping
 
 - General thoughts on project pitches: you should have a final pitch. You do, right?
-- Project requirements and [a look forward](../projects/)
-- Ronan and Katia are leading a discussion on [tktktk](http://projects.propublica.org/drug-labels/)
+- Project requirements and [a look forward](../../projects/)
+- Ronan and Katia are leading a discussion on [The Refugee Project](http://www.therefugeeproject.org/)
 - Talking about our [class assignment](https://docs.google.com/spreadsheet/ccc?key=0AvKWOz9eYW7ydGxfNnRGWnI4Vm9mT0thRnc2U2dSYWc#gid=0).
 
 ##Let's Make an App
@@ -19,7 +19,7 @@ In class last week we deconstructed a ProPublica application [about drug labels]
 
 Now let's build it. Our goal is to replicate the functionality of the interactive (which means, at the bare minimum, it has to work) and improve it as you prefer.
 
-We'll break into groups of 3. 
+We'll break into groups of 3.
 
 - Ronan, Manasi, Kateryna
 - Joshua, Becca, Krystnell Alexis
@@ -29,10 +29,42 @@ We'll break into groups of 3.
 - Hannah, Alex, John
 - Kristin, Cayleigh, Xinrui
 
-Things we need: 
+Things we need:
 
 1. Make sure you have Google Chrome and Sublime Text 2 downloaded and ready to rumble.
-2. Make a older somewhere on your desktop and make an `index.html` page inside it. Give it an `h1` of "Drug Label Interactive".
+2. Make a older somewhere on your desktop and make an `index.html` page inside it. Add the following code as a starter.
+
+  ```html
+  <style type="text/css">
+
+  body {
+    width:760px;
+    margin:40px auto;
+    font-family: georgia, sans;
+  }
+
+  h1 {
+    border-bottom:1px solid #dedede;
+    margin-bottom:20px;
+    padding-bottom:20px;
+  }
+
+  </style>
+
+
+  <h1>Starter interactive</h1>
+
+  <p>This is where HTML will go.</p>
+
+  <script type="text/javascript">
+
+  // this is how you comment in javascript.
+  console.log("this is where javascript will go!")
+
+  </script>
+  ```
+
+
 3. In your Terminal, navigate to the folder and run (optional, mac users only)
 
 	```
@@ -51,13 +83,13 @@ Things you might need:
 - Probably the data for maximum daily dose by drug.
 - Probably how to make a list/grid of things.
 - Probably a way to store data in Javascript (we've done this before)
-- Probably a way to "do stuff when you click things". One popular library non-experts do this is with [jQuery](http://jquery.com/). 
+- Probably a way to "do stuff when you click things". One popular library non-experts do this is with [jQuery](http://jquery.com/).
 - Probably a way to do basic math in a web browser. (JavaScript seems like a good idea.)
 
 
 
 ##Homework
-Your homework is to email the class a link to your group's working project by 11:59PM Tuesday night. The project must work correctly, but it doesn't have to look fancy. We don't really care much about grades, but we'll say there are three outcomes:
+Your homework is to email the class a link to your group's working project by 11:59PM March 25. The project must work correctly, but it doesn't have to look fancy. We don't really care much about grades, but we'll say there are three outcomes:
 
 - You do not turn in a link, or you turn in a link that is broken. (Not ideal.)
 - You turn in a link that works. (Ideal.)

@@ -1,0 +1,9 @@
+Last year, on average, Major League baseball teams struck out more than at any time in its 112 year history. This subject has been written about before, but no news organization has visualized the distribution or, to my satisfaction, offered a significant answer to why it has been rising so steadily, even in the post-steroids era. This could be published soon, with a focus on how teams currently in the playoffs have been affected, or it could be published at the beginning of next year, as a preview to the next season.
+
+My project would be an interactive chart that shows the average strikeouts per year of every team in the Major Leagues for every year their franchise has been in existence. Ideally, this chart would be interactive, allowing readers to see the chart in the context of their favorite team. All the historical data is available on baseball-reference.com.
+
+I’d like to talk to a couple hitting coaches to see if they have recognized this difference and if they are telling their batters to hit differently than they did in the past. Chili Davis, the batting coach of the Oakland Athletics, would be ideal, but I’ve identified some minor league coaches as well.
+
+I would probably need to learn how to scrape the data from baseball-reference, since I don’t want to manually download 5000 web pages by hand, and I would also need to learn how to do more effective user interaction with a D3 chart than I do right now.
+
+There are a number of stat-based sports sites that I could pitch this to, including the Baseball Prospectus blog, FanGraphs or more local sites, like the sports desks of the San Francisco Chronicle or the Oakland Tribune.

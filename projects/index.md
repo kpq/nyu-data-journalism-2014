@@ -160,28 +160,29 @@ By class time on Feb 26, post a link to three pitches (like the one above) to yo
 By class time on March 5, post a link to your final project pitch that takes into account our feedback.
 
 ##March 12
-Your final pitch has been decided.
+Your final pitch has been decided. Your project should be approved.
 
 ##March 26
-You have collected and cleaned all your data.
+You have collected and cleaned all your data. You’ve started to analyze your data in Excel and have a vague sense of what you want to make. You should be starting to contact your, er, contacts and setting up any interviews if needed. You should have identified any secondary datasets you’ll need and should be collected them this week (like geo shapefiles, or census demographic info, etc…).
 
-#April 2
-You've started to do analysis, done at least a first round of all your interviews.
+##April 2
+All your data should be collected and organized in your repo. You should have made first contact with any experts you’ll need to help explain your findings.
 
-#April 9
-TKKT
+##April 9
+You should have a starting of your final HTML document, even if it’s just some text and Excel sketch screenshots. You should have a very good sense of what you’re building and what technologies you will need.
 
-#April 16
-Project help session in class. We'll be focusing on helping you with your data analysis. By this date you should have a good idea on exactly what it is you're building. 
+##April 16
+Project help session in class. We'll be focusing on helping you with your data analysis. By this date you should have a good idea on exactly what it is you're building.
 
-#April 23
-Project help session in class. We'll be focusing on editing your writing and ideas. 
+##April 23
+Project help session in class. We'll be focusing on editing your writing and ideas. Your HTMl document should be taking shape. If you’re using Excel, you should have at least screenshots of sketches for all your final charts (very rough is totally fine). If you’re using another technology, you should also have substantially coding progress made – datasets are loaded and in the correct format, topojson files are generated if needed. If you’re trying to do more than one chart on a page, now is a good time to refactor so things work well together.
 
-#April 30
-Project help session in class. This will be about design and presentation ONLY. All your work is done: we're just polishing it up. 
+##April 30
+This will be a last minute sanity check. Copy should be written and everything should be mostly in place, any interactivity should be mostly working. This last week should be reserved for design tweaks, text rewrites and polishing.
 
-#May 7
-Presentations + projects due
+
+##May 7
+Presentations + projects due. Your project must be published with a final URL by the beginning of class. You will give a brief overview of your project and are required to be gracious during your classmates thunderous applause.
 
 
 <!-- By **Date Feb 26**, you should update your pitch page (or make a new one) with your final pitch for your project. Most of you will just edit one of your original pitches and incoporate our feedback from last week, but some of you may need to re-pitch a new idea or two.
@@ -199,7 +200,7 @@ Under your pitch, include the following:
 • A list of questions you'd like to ask your data -->
 
 
-<!-- 
+<!--
 ##Date 1
 Your project should be approved, you should have your repo setup and your main dataset downloaded. You’ve started to examine your data in R or Excel or D3, and have a vague sense of what you want to make. You should be starting to contact your, er, contacts and setting up any interviews if needed. You should have identified any secondary datasets you'll need and should be collected them this week (like geo shapefiles, or census demographic info, etc...).
 
