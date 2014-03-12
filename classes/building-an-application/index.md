@@ -38,15 +38,15 @@ Things we need:
   <style type="text/css">
 
   body {
-    width:760px;
-    margin:40px auto;
-    font-family: georgia, sans;
+      width:760px;
+      margin:40px auto;
+      font-family: georgia, sans;
   }
 
   h1 {
-    border-bottom:1px solid #dedede;
-    margin-bottom:20px;
-    padding-bottom:20px;
+      border-bottom:1px solid #dedede;
+      margin-bottom:20px;
+      padding-bottom:20px;
   }
 
   </style>
@@ -59,7 +59,7 @@ Things we need:
   <script type="text/javascript">
 
   // this is how you comment in javascript.
-  console.log("this is where javascript will go!")
+    console.log("this is where javascript will go!");
 
   </script>
   ```
