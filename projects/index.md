@@ -159,6 +159,30 @@ By class time on Feb 26, post a link to three pitches (like the one above) to yo
 ##March 5
 By class time on March 5, post a link to your final project pitch that takes into account our feedback.
 
+##March 12
+Your final pitch has been decided.
+
+##March 26
+You have collected and cleaned all your data.
+
+#April 2
+You've started to do analysis, done at least a first round of all your interviews.
+
+#April 9
+TKKT
+
+#April 16
+Project help session in class. We'll be focusing on helping you with your data analysis. By this date you should have a good idea on exactly what it is you're building. 
+
+#April 23
+Project help session in class. We'll be focusing on editing your writing and ideas. 
+
+#April 30
+Project help session in class. This will be about design and presentation ONLY. All your work is done: we're just polishing it up. 
+
+#May 7
+Presentations + projects due
+
 
 <!-- By **Date Feb 26**, you should update your pitch page (or make a new one) with your final pitch for your project. Most of you will just edit one of your original pitches and incoporate our feedback from last week, but some of you may need to re-pitch a new idea or two.
 
