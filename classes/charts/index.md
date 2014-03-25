@@ -28,7 +28,7 @@ The basic types of charts include line charts, area charts, bar charts, scatterp
 - Team Excel
  - You might follow [Cole Nussbaumer's guide.](http://www.storytellingwithdata.com/2011/11/how-to-do-it-in-excel.html)
 - Team Service
-  - You might try out [Datawrapper](http://datawrapper.de/)
+  - You might try out [Datawrapper](http://datawrapper.de/) or [Chartbuilder](http://quartz.github.io/Chartbuilder/)
 - Team Be in Charge
   - You might try out [D3](https://github.com/mbostock/d3/wiki/Gallery)
 
