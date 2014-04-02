@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Getting up to speed</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/assets/base.css">
+        <link rel="stylesheet" href="/assets/syntax.css">
+
+        <!-- Custom CSS -->
+        <!-- <link rel="stylesheet" href="/assets/main.css"> -->
+
+        <script src="/assets/d3.v3.min.js" charset="utf-8"></script>
+        <script src="/assets/topojson.v1.min.js" charset="utf-8"></script>
+        <script src="/assets/queue.v1.min.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <div class="main">
+
+            <header>
+  <a href="/">NYU — Spring 2014</a> / <span>Week 1</span>
+</header>
+
+<h1>Getting up to speed</h1>
+
+<div class="lesson">
+  <p><head>
+    <script src='http://api.tiles.mapbox.com/mapbox.js/v1.0.0/mapbox.js'></script>
+    <link href='http://api.tiles.mapbox.com/mapbox.js/v1.0.0/mapbox.css' rel='stylesheet' />
+    <style>
+        #map { position:relative; top:0; bottom:0; width:100%; height: 400px; margin-bottom: 20px;}
+    </style>
+</head>
+<style>
+    .map-legend i {
+        width: 18px;
+        height: 18px;
+        float: left;
+        margin-right: 8px;
+        opacity: 0.7;
+    }
+    .leaflet-popup h2{
+      margin-top: 0px;
+      border: none;
+    }
+    .leaflet-popup-close-button {
+        display: none;
+    }
+    .leaflet-popup-content-wrapper {
+        pointer-events: none;
+    }
+</style></p>
+
+<p>We&rsquo;ll do normal first-day things, like talk about why we‘re all here and what we want. Class goals and policies, introductions, office hours, grading policies, project overview, configuring our laptops, signing up for tutorial and presenation duty.</p>
+
+<p>Finally, we&rsquo;ll get inspired by some code we see online and use it for a quick demonstration.</p>
+
+<h2>Housekeeping</h2>
+
+<ul>
+<li>  Make sure your info is right on the <a href="https://github.com/kpq/nyu-data-journalism-2014/wiki/Class-wiki">wiki</a></li>
+<li>  Are you sure you&rsquo;ve signed up for the <a href="https://groups.google.com/forum/#!forum/nyu-data-journalism-2014">Google group</a>?</li>
+</ul>
+
+<h2>Introduction</h2>
+
+<p>How Amanda Got Started <a href="http://d.pr/i/XrmI">Intern</a> <a href="http://www.nytimes.com/packages/html/newsgraphics/pages/hp/2008/2008-06-03-1800.html">Delightful boxes</a> <a href="http://www.nytimes.com/interactive/2013/06/12/arts/design/Damien-Hirsts-Spot-Prices.html?_r=3&amp;">The dots are real</a></p>
+
+<p>How Kevin Got Started <a href="http://www.columbiamissourian.com/m/1497/weve-got-to-have-more-corn-expert-says/">Grad school</a> <a href="http://www.nytimes.com/interactive/2008/05/26/sports/playmagazine/200805227_IVANOVIC_GRAPHIC.html">Intern</a> <a href="http://www.nytimes.com/interactive/2012/08/05/sports/olympics/the-100-meter-dash-one-race-every-medalist-ever.html">Peaked</a></p>
+
+<p><a href="http://www.nytimes.com/newsgraphics/2013/12/30/year-in-interactive-storytelling/">2013: The Year in Interactive Storytelling</a></p>
+
+<p><a href="http://chartsnthings.tumblr.com/post/23348191031/amanda-cox-and-countrymen-chart-the-facebook-i-p-o">Learn to think like Amanda</a> <a href="http://kpq.github.io/">or Kevin</a></p>
+
+<p>Discussion: </p>
+
+<ul>
+<li><p>What do you all want to get out of the class?</p></li>
+<li><p>What kinds of jobs are you going to be looking for?</p></li>
+<li><p>What has been missing so far in your journalism education?</p></li>
+</ul>
+
+<h2>Getting your machines set up</h2>
+
+<ol>
+<li><p>Everyone should download a <strong>text editor</strong> to their laptop, if they have one. </p>
+
+<p>For Mac users, we strongly recommend <a href="http://www.sublimetext.com/2">Sublime Text 2</a>. It eventually costs $70, but you can use it for free for a while. (Kevin still uses the free version and he uses it every day.) Other alternatives include <a href="http://www.barebones.com/products/textwrangler/">TextWrangler</a> (free) or <a href="http://www.barebones.com/products/bbedit/">BBEdit</a> (not free).</p>
+
+<p>PC Users might consider <a href="http://notepad-plus-plus.org/">Notepad++</a>.</p></li>
+<li><p>Next, we need to make sure Git is installed on all our computers. Here&rsquo;s <a href="http://git-scm.com/book/en/Getting-Started-Installing-Git">a helper</a>. If you have a Mac, you probably have it installed already. We&rsquo;ll do this together.</p></li>
+</ol>
+
+<h3>Signing up for Github</h3>
+
+<p>If you’ve never used <a href="http://git-scm.com/">Git</a> or <a href="https://github.com">Github</a> before, don’t worry, it’s not as scary as it may seem at first. It’s basically like <a href="https://www.dropbox.com/">Dropbox</a> for programmers, with enough goofy names and concepts to make it all feel a little more complicated than it really is.</p>
+
+<ol>
+<li><p>First, go to <a href="https://github.com/">Github</a> and create a username and password, etc. 
+<img src="github-welcome.png">.</p></li>
+<li><p>Once you are logged in, click on “Create a repository.” You should see this screen:
+<img src="create-repo.png">
+Name your repo <code>data-journalism-home</code>.
+Make sure you check “Initialize this repository with a README”.
+Finally, click the button that says <code>Create repository.</code></p></li>
+<li><p>Switch the branch from <code>master</code> to <code>gh-pages</code>. (It has to be called gh-pages to take advantage of some built-in magic with Github Pages.)
+<img src="gh-pages.png"> </p></li>
+<li><p>Copy the clone url on the bottom-right.
+<img src="clone.png"></p></li>
+<li><p>We&rsquo;ve made a siccessful Git repository (called a repo). Nice! Now all we need to do is copy it to our computers. </p></li>
+<li><p>Go to your home directory, it’s the one in your sidebar with a house icon. Kevin&rsquo;s is called “kevin” and the keyboard shortcut to go there is: ⌘⇧H</p></li>
+<li><p>Inside this folder, create a new folder called <code>data-journalism-spring-2014</code>. This is where we’re going to store our repository (and, later on, where we&rsquo;ll put other ones).
+<img src="starting-folder.png"></p></li>
+<li><p>Open up the Terminal application on your Mac and navigate to the folder you just created. (We&rsquo;ll do some practice, too.) For later, here are some decent resources, from <a href="http://www.codecademy.com/blog/72-getting-comfortable-in-the-terminal-linux">Codeacademy</a> and <a href="http://mally.stanford.edu/%7Esr/computing/basic-unix.html">Stanford</a>.</p></li>
+<li><p>Once you&rsquo;re &ldquo;inside&rdquo; your folder on the Terminal, type <code>git clone</code> and then the URL you pasted from earlier. (For Kevin, it&rsquo;s <code>git clone https://github.com/kpq/data-journalism-home.git</code>), but yours will be slightly different.
+<img src="terminal-1.png"></p></li>
+<li><p>Open up the folder in a text editor (like Sublime or whatever you prefer). Create a new file called <code>index.html</code> and write </p>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;h1&gt;</span>Hello, world!<span class="nt">&lt;/h1&gt;</span>
+</code></pre></div></li>
+<li><p>Save the file and view it in a web browser. How does it look?</p></li>
+<li><p>Let&rsquo;s use git and the Terminal to push it back to Github. Type this in the Terminal. (Hit enter after each line.)</p>
+<div class="highlight"><pre><code class="html language-html" data-lang="html">git add .
+git commit -m &quot;added index page, this is a commit message&quot;
+git push origin master
+</code></pre></div></li>
+<li><p>If it worked, you should be able to go to your web page (github.com/yourUserName) and see the result. And, after a while, if you&rsquo;re on the gh-pages branch, you shoudl have a public-facing web site on yourUserName.gitub.io/. Sweet!</p></li>
+</ol>
+
+<h2>If there&rsquo;s time: using an online example.</h2>
+
+<p>Say you want to make an interactive map of the United States and you don&rsquo;t know where to start, but you DO know what you want your map to look and behave pretty much like <a href="http://bl.ocks.org/ansis/9368682874d9e8adda21">this one</a> you&rsquo;ve already seen. </p>
+
+<div id='map'></div>
+
+<p>What&rsquo;s next?</p>
+
+<ol>
+<li>Open the page in a separate window and view the page source.</li>
+<li>Copy all the code and paste it into a new file in your text editor. Call it <code>week-1-map.html</code> and save it into your class folder.</li>
+<li>Open the file in a browser.</li>
+<li><p>Say your data is not people per square mile but something else per state – say, dollars raised for a political campaign. Where does this map get that data from?</p></li>
+<li><p>If you can, find the data and save a local copy. Then edit the data for New York and see what happens.</p></li>
+<li><p>Broadly speaking, how can you use this example going forward?</p></li>
+</ol>
+
+<h2>Homework</h2>
+
+<p>Your assignment is to: </p>
+
+<ol>
+<li><p>Have your github page publishing correctly before the next class. For now, that means yourusername.github.io should be rendering your <code>index.html</code> page with your name and the phrase &ldquo;Useful links for Kevin and Amanda.&rdquo; (We&rsquo;ll be adding more links later.)</p></li>
+<li><p>Bring data from all 50 states (or enough to be interesting) to class. This data should be of the type that could be shown on a map.</p></li>
+</ol>
+
+<script type="text/javascript" src="http://leafletjs.com/examples/us-states.js"></script>
+
+<script type='text/javascript'>
+    // Based on the Leaflet example from http://leafletjs.com/examples/choropleth.html
+
+    var map = L.mapbox.map('map', 'examples.map-vyofok3q').setView([37.8, -96], 4);
+
+    var legend = L.mapbox.legendControl().addLegend(getLegendHTML()).addTo(map);
+
+    var popup = new L.Popup({ autoPan: false });
+
+    // statesData comes from the 'us-states.js' script included above
+    var statesLayer = L.geoJson(statesData,  {
+        style: getStyle,
+        onEachFeature: onEachFeature
+    }).addTo(map);
+
+    function getStyle(feature) {
+        return {
+            weight: 2,
+            opacity: 0.1,
+            color: 'black',
+            fillOpacity: 0.7,
+            fillColor: getColor(feature.properties.density)
+        };
+    }
+
+    // get color depending on population density value
+    function getColor(d) {
+        return d > 1000 ? '#8c2d04' :
+            d > 500  ? '#cc4c02' :
+            d > 200  ? '#ec7014' :
+            d > 100  ? '#fe9929' :
+            d > 50   ? '#fec44f' :
+            d > 20   ? '#fee391' :
+            d > 10   ? '#fff7bc' :
+            '#ffffe5';
+    }
+
+    function onEachFeature(feature, layer) {
+        layer.on({
+            mousemove: mousemove,
+            mouseout: mouseout,
+            click: zoomToFeature
+        });
+    }
+
+    var closeTooltip;
+
+    function mousemove(e) {
+        var layer = e.target;
+
+        popup.setLatLng(e.latlng);
+        popup.setContent('<h2>' + layer.feature.properties.name + '</h2>' +
+            layer.feature.properties.density + ' people per square mile');
+
+        if (!popup._map) popup.openOn(map);
+        window.clearTimeout(closeTooltip);
+
+        // highlight feature
+        layer.setStyle({
+            weight: 3,
+            opacity: 0.3,
+            fillOpacity: 0.9
+        });
+
+        if (!L.Browser.ie && !L.Browser.opera) {
+            layer.bringToFront();
+        }
+    }
+
+    function mouseout(e) {
+        statesLayer.resetStyle(e.target);
+        closeTooltip = window.setTimeout(function() {
+            map.closePopup();
+        }, 100);
+    }
+
+    function zoomToFeature(e) {
+        map.fitBounds(e.target.getBounds());
+    }
+
+    function getLegendHTML() {
+        var grades = [0, 10, 20, 50, 100, 200, 500, 1000],
+            labels = [],
+            from, to;
+
+        for (var i = 0; i < grades.length; i++) {
+            from = grades[i];
+            to = grades[i + 1];
+
+            labels.push(
+                '<i style="background:' + getColor(from + 1) + '"></i> ' +
+                from + (to ? '&ndash;' + to : '+'));
+        }
+
+        return '<span>People per square mile</span><br>' + labels.join('<br>');
+    }
+</script>
+
+</div>
+
+
+        </div> <!-- /main -->
+
+        <script src="/assets/base.js" charset="utf-8"></script>
+
+    </body>
+</html>

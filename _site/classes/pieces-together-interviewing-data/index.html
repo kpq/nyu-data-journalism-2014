@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Putting the Pieces Together + Some Journalism</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/assets/base.css">
+        <link rel="stylesheet" href="/assets/syntax.css">
+
+        <!-- Custom CSS -->
+        <!-- <link rel="stylesheet" href="/assets/main.css"> -->
+
+        <script src="/assets/d3.v3.min.js" charset="utf-8"></script>
+        <script src="/assets/topojson.v1.min.js" charset="utf-8"></script>
+        <script src="/assets/queue.v1.min.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <div class="main">
+
+            <header>
+  <a href="/">NYU — Spring 2014</a> / <span>Week 4</span>
+</header>
+
+<h1>Putting the Pieces Together + Some Journalism</h1>
+
+<div class="lesson">
+  <p>We&rsquo;ll try to form something closer to a coherent whole out of what we&rsquo;ve learned so far. And then we&rsquo;ll practice interviewing spreadsheets.</p>
+
+<h2>Housekeeping</h2>
+
+<ul>
+<li>Sign up for a critique date, in twos or threes, on the <a href="https://github.com/kpq/nyu-data-journalism-2014/wiki/Critique-Schedule">critique schedule wiki</a></li>
+<li>And, seriously, if your info is not right on the <a href="https://github.com/kpq/nyu-data-journalism-2014/wiki/Class-wiki">main wiki</a>, you are not on track for success.</li>
+</ul>
+
+<h2>Critique + Discussion:</h2>
+
+<ul>
+<li>Lilah and Erin</li>
+<li>Your reading homework from last week.</li>
+<li>Some scraping things we might have talked about include <a href="http://www.wnyc.org/story/school-was-open-most-parents-kept-students-home/">WNYC&rsquo;s school attendance work</a> and <a href="http://misener.org/kickstarter-hides-failure/">hiding failure</a></li>
+<li><a href="https://twitter.com/fjsteele/status/434249935316615168/photo/1">The essence of programming</a></li>
+<li>The Data Journalism Handbook includes a nice list of <a href="http://datajournalismhandbook.org/1.0/en/understanding_data_5.html">types of data journalism stories.</a></li>
+</ul>
+
+<h2>Putting the pieces together</h2>
+
+<p><img src="child-care.png" style="width:80%; margin-left:10%"></p>
+
+<p>Here is some data on <a href = "child-care-costs.xlsx">child care costs</a>. Let’s pretend we want to make a map to help with our analysis.</p>
+
+<ul>
+<li><p>Format the data to be ready for analysis, and possible merging with other datasets. This means the first row has headers, ideally without any spaces or special characters, and the state names are as normal as possible. A hint: you may want to google something like &ldquo;replace asterisks in excel.&rdquo; </p></li>
+<li><p>Remember <a href="http://bl.ocks.org/ansis/9368682874d9e8adda21">this guy</a>? Copy the code to your text editor, and reacquaint yourself with how the colors get assigned.</p></li>
+<li><p>On the first line of the getStyle function add the following: <code>console.log(feature.properties)</code></p></li>
+<li><p>Turn your data into JSON properties with <a href="http://shancarter.github.io/mr-data-converter/">Mr. Data Converter</a>. </p></li>
+<li><p>In your code, add <br> <code>var childCare = </code>  and the result from Mr. Data Converter. </p></li>
+<li><p>After that, add <br><code>var childCareDict  = {};</code><br> and <br><code>
+childCare.forEach( function(row) { childCareDict[row.state] = row.child });</code><br>, 
+using whatever header names you used. </p></li>
+<li><p>Try something like <code>console.log(childCareDict[&quot;Oregon&quot;]);</code></p></li>
+<li><p>Figure out a way to change the colors on your map using childCareDict. It&rsquo;s okay to struggle for a little bit. <span style="color:white"><code style="background:white">fillColor: getColor(  childCareDict[feature.properties.name]  )</code> </span></p></li>
+<li><p>Adjust your colors, then fix your rollover and your key. <a href="http://colorbrewer2.org/">ColorBrewer</a> is a good resource for map palettes. And here&rsquo;s <a href="http://www.macwright.org/2013/02/18/literate-jenks.html">a good place</a> to start when thinking about breaks.</p></li>
+<li><p>If you are ahead, turn your map into something resembling journalism, with, say, a headline, and some sentences. A very rough example is <a href="map.html">here.</a> Notice that I switched to maptiles that don&rsquo;t scream &ldquo;here&rsquo;s where the oceans are.&rdquo; You can do the same thing to Fusion table maps with <a href="http://fusion-tables-api-samples.googlecode.com/svn/trunk/FusionTablesLayerWizard/src/index.html">saturation</a>.</p></li>
+<li><p>Push your map to your github account, and add a link from your index page. Let&rsquo;s make sure we&rsquo;re all using the tab key in Sublime Text and terminal to our advantage.</p></li>
+</ul>
+
+<h2>Looking at data</h2>
+
+<style>
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+</style>
+
+<p>So far, we haven&rsquo;t really done any journalism. That&rsquo;s okay, because, as Nietzsche said, 
+<blockquote><p>He who would learn to <a href = "http://1.bp.blogspot.com/-IkhIk3TKD_Q/TwukDXh-FXI/AAAAAAAAAcQ/kAFlf9Jrtx0/s400/image012.jpg">fly</a> one day must first learn to stand and walk and run and climb and dance; one cannot fly into flying.</p></blockquote> </p>
+
+<p>But it&rsquo;s about that time.</p>
+
+<p>The typical graduation rates reported for colleges are broken, in part because transfer students are counted in the same way as drop-outs. How could you fix this? </p>
+
+<ul>
+<li><p>Some schools voluntarily give their progress data to a group called <a href="http://www.collegeportraits.org/">College Portraits</a>. Here is a <a href="http://www.collegeportraits.org/SC/USC-Upstate/tracker">sample report</a>. But even friendly people associated with that project don&rsquo;t know they have the data in a database. I suspect they do, but I&rsquo;m not sure. I have scraped the data, and done some work to standardize it for you <a href="college-grad-and-transfer-rates.xlsx">here</a>. For the extra curious, here is some <a href="collegeportraits.r">horrible code</a>.</p></li>
+<li><p>Note that there are some small difference between the <a href="http://www.collegeportraits.org/AL/AU/tracker">2013 reports</a> and the <a href="http://www.collegeportraits.org/AL/JSU/tracker">2012 ones</a>.</p></li>
+<li><p>Take 20 minutes to explore the data, generating a list of questions, facts, and weirdness you uncover <a href="https://docs.google.com/document/d/1QVt45d0JfwLfa0RQtjULr68jZeWFKqEN6Ij4RU5sGVY/edit#">here</a>. Your goal is questions that are both answerable and could turn into interesting ledes. </p></li>
+<li><p>Let&rsquo;s come up with a gameplan for collecting the data for the biggest schools. What do we need? </p></li>
+<li><p>Let&rsquo;s practice aggregating to see how far we have to go. Here&rsquo;s <a href="list-of-schools.csv">something</a> for that. </p></li>
+<li><p>In the doc with your questions, let&rsquo;s draft a request for data from a school.</p></li>
+</ul>
+
+<h2>Homework</h2>
+
+<ul>
+<li>Project pitches should be on the internet before next week&rsquo;s class.</li>
+<li>And, seriously, if your info is not right on the <a href="https://github.com/kpq/nyu-data-journalism-2014/wiki/Class-wiki">main wiki</a>, you are not on track for success.</li>
+</ul>
+
+</div>
+
+
+        </div> <!-- /main -->
+
+        <script src="/assets/base.js" charset="utf-8"></script>
+
+    </body>
+</html>
