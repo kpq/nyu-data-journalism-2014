@@ -10,7 +10,7 @@ Finally, we'll do a drive-by on your projects.
 
 ##Housekeeping
 - [Project timeline.](../../projects/) Are you on track for success?
-- Peipei and Ellis are leading a discussion on [XXX]()
+- Peipei and Ellie are leading a discussion on [XXX]()
 
 ##Lecture
 Second week in a row of [more lecture](maps-lecture.pdf) than you're used to. It can be quick and painless.
